@@ -1,0 +1,7 @@
+.productPageContainer {
+  .bannerContent {
+    @media only screen and (min-width:1025px) {
+      padding: 0px 50px !important;
+    }
+  }
+}

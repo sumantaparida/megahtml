@@ -3768,11 +3768,8 @@ div[rel='scrollcontent2'] {
   margin: 0;
   font-size: 12px;
 }
-.author-reting p a {
-  color: red;
-}
 .author-reting p a .fa {
-  color: #dac206;
+  color: #ffc107;
   font-size: 16px;
 }
 .author-reting p a:hover {
@@ -3891,6 +3888,11 @@ div[rel='scrollcontent2'] {
   padding: 0px;
   margin: 0px;
   display: inline-block;
+}
+@media only screen and (max-width: 1023px) {
+  .navigation ul[role-nav] {
+    display: none;
+  }
 }
 .navigation ul[role-nav] li {
   display: inline-block;
@@ -4693,7 +4695,7 @@ div[rel='scrollcontent2'] {
 }
 @media only screen and (max-width: 767px) {
   .megacoursesBanner {
-    height: 1000px;
+    height: 1070px;
   }
 }
 
@@ -4708,6 +4710,24 @@ div[rel='scrollcontent2'] {
   .allmegacoursesBanner {
     height: 475px;
   }
+}
+
+.lightboxContainer #myCarousel {
+  margin-top: 10%;
+}
+
+.commentFormsection {
+  margin-top: 20px;
+}
+.commentFormsection [rating] a {
+  font-size: 25px;
+  color: #ffc107;
+}
+.commentFormsection [rating] a:hover, .commentFormsection [rating] a:focus {
+  text-decoration: none;
+}
+.commentFormsection [rating] a .fa:hover::before {
+  content: '\f005';
 }
 
 @media only screen and (max-width: 1023px) {
@@ -5523,6 +5543,12 @@ div[rel='scrollcontent2'] {
 .informationWrapper .infoButton span {
   font-size: 14px;
   font-weight: 400;
+}
+
+@media only screen and (min-width: 1025px) {
+  .productPageContainer .bannerContent {
+    padding: 0px 50px !important;
+  }
 }
 
 /*--Middle Body CSS--*/

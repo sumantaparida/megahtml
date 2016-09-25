@@ -19,7 +19,7 @@
   background-size: cover;
   margin-bottom: 80px;
   @media only screen and (max-width:767px) {
-    height: 1000px;
+    height: 1070px;
   }
 }
 //
@@ -31,5 +31,29 @@
   background-size: cover;
   @media only screen and (max-width:767px) {
     height: 475px;
+  }
+}
+.lightboxContainer {
+  #myCarousel {
+    margin-top: 10%;
+  }
+}
+.commentFormsection {
+  margin-top: 20px;
+  [rating] {
+    a {
+      font-size: 25px;
+      color: #ffc107;
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+      .fa {
+        &:hover {
+          &::before {
+            content: '\f005';
+          }
+        }
+      }
+    }
   }
 }

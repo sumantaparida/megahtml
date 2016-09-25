@@ -44,12 +44,12 @@ jQuery.fn.customscroll = function( d ) {
                             drag.s.data( { click: false } );
                         });
                         drag.id.bind('mousewheel', function( f, delta ) {
-                            f.preventDefault();
-                            clearTimeout(drag.wheeltimer);
-                            var initial = drag.s.position().left, moveby;
-                            drag.s.css({left: Math.min(Math.max((moveby = -10 * delta + initial), -bounce), maxs[0])});
-                            drag.c.css({left: Math.max(Math.min(- drag.tickB * moveby, drag.tickB * bounce), maxs[1])});
-                            drag.wheeltimer = setTimeout(drag.redrawH, 100);
+                            // f.preventDefault();
+                            // clearTimeout(drag.wheeltimer);
+                            // var initial = drag.s.position().left, moveby;
+                            // drag.s.css({left: Math.min(Math.max((moveby = -10 * delta + initial), -bounce), maxs[0])});
+                            // drag.c.css({left: Math.max(Math.min(- drag.tickB * moveby, drag.tickB * bounce), maxs[1])});
+                            // drag.wheeltimer = setTimeout(drag.redrawH, 100);
                         });
                         drag.s.mousedown( function( f ) {
                             f.preventDefault();
@@ -109,12 +109,12 @@ jQuery.fn.customscroll = function( d ) {
                             drag.s.data( { click: false } );
                         });
 												drag.id.bind('mousewheel', function( f, delta ) {
-                            f.preventDefault();
-                            clearTimeout(drag.wheeltimer);
-                            var initial = drag.s.position().top, moveby;
-                            drag.s.css({top: Math.min(Math.max((moveby = -10 * delta + initial), -bounce), maxs[0])});
-                            drag.c.css({top: Math.max(Math.min(-drag.tickB * moveby, drag.tickB * bounce), maxs[1])});
-                            drag.wheeltimer = setTimeout(drag.redrawV, 100);
+                            // f.preventDefault();
+                            // clearTimeout(drag.wheeltimer);
+                            // var initial = drag.s.position().top, moveby;
+                            // drag.s.css({top: Math.min(Math.max((moveby = -10 * delta + initial), -bounce), maxs[0])});
+                            // drag.c.css({top: Math.max(Math.min(-drag.tickB * moveby, drag.tickB * bounce), maxs[1])});
+                            // drag.wheeltimer = setTimeout(drag.redrawV, 100);
                         });
                         drag.s.bind('mousedown', function( f ) {
                             f.preventDefault();
