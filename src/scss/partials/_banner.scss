@@ -1,0 +1,274 @@
+.banner-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  top: 0;
+  position: relative;
+  overflow: hidden;
+}
+.banner-container .slider .flexslider .slides li {
+  position: relative;
+}
+.banner-container .slider .flexslider .slides li .banner-content {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 35%;
+  left: 0;
+  z-index: 1000;
+  color: #FFF;
+  @media only screen and (max-width:767px) {
+    text-align: center;
+    top: 20%;
+  }
+  @media only screen and (min-width:767px) and (max-width:768px) {
+    top: 28%;
+  }
+  .container {
+    @media only screen and (min-width:980px) and (max-width:1024px) {
+      width: 800px;
+      h3 {
+        font-size: 20px;
+      }
+      h2 {
+        font-size: 35px;
+      }
+      .dropdown-container {
+        width: 40%;
+      }
+    }
+    @media only screen and (min-width:768px) and (max-width:979px) {
+      width: 650px;
+      h3 {
+        font-size: 18px;
+        line-height: 25px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      .dropdown-container {
+        width: 50%;
+      }
+    }
+  }
+}
+.banner-container .slider .flexslider .slides li .banner-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 20px;
+  @media only screen and (max-width:767px) {
+    font-size: 20px;
+  }
+  @media only screen and (min-width:767px) and (max-width:768px) {
+    font-size: 20px;
+  }
+}
+.banner-container .slider .flexslider .slides li .banner-content h3 {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 30px;
+  @media only screen and (max-width:766px) {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 60px;
+  }
+  @media only screen and (min-width:767px) and (max-width:768px) {
+    font-size: 20px !important;
+    padding-top: 45px;
+  }
+}
+.banner-bottom {
+  display: block;
+  background: #ececec;
+  position: relative;
+  height: 147px;
+}
+.banner-bottom:before {
+  content: "";
+  background: url("../images/meg-left-img.png") top left no-repeat;
+  position: absolute;
+  height: 121px;
+  width: 120px;
+  left: 0;
+  top: 0;
+}
+.banner-bottom:after {
+  content: "";
+  background: url("../images/meg-right-img.png") top left no-repeat;
+  position: absolute;
+  height: 147px;
+  width: 97px;
+  right: 0;
+  top: 0;
+}
+.banner-bottom ul {
+  display: block;
+  text-align: center;
+  padding-top: 60px;
+}
+.banner-bottom ul li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top !important;
+}
+.banner-bottom ul li .count {
+  background: #00CC66;
+  color: #FFFFFF;
+  height: 68px;
+  line-height: 68px;
+  font-size: 34px;
+  padding: 0 20px;
+}
+.find-courses-banner {
+  display: block;
+  text-align: left;
+  margin-top: 50px;
+}
+.dropdown-container {
+  width: 35%;
+  padding: 0px;
+  float: left;
+  @media only screen and (max-width:767px) {
+    width: 75%;
+    float: none;
+    margin: auto;
+  }
+  @media only screen and (min-width:768px) and (max-width:990px) {
+    width: 45%;
+  }
+  @media only screen and (max-width:600px) {
+    width: 100%;
+    float: none;
+    margin: auto;
+  }
+}
+.selection {
+  padding: 0px !important;
+  color: #fff;
+  height: 36px;
+  position: relative;
+  > a {
+    display: block;
+    color: #fff;
+    border: solid 3px #fdcd0b;
+    float: left;
+    width: 100%;
+    > span {
+      display: inline-block;
+      float: left;
+      &:first-child {
+        line-height: 30px;
+        padding: 0px 5px;
+        > span {
+          margin-right: 5px;
+        }
+      }
+    }
+    [dropdown-arrow] {
+      width: 40px;
+      height: 30px;
+      float: right;
+      background: #fdcd0b;
+      padding: 5px;
+      text-align: center;
+      img {
+        transition: all 300ms ease;
+        margin-top: 0px;
+      }
+    }
+    &:hover, &:focus {
+      color: #fff;
+    }
+  }
+  ul[option] {
+    width: 100%;
+    float: left;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-bottom: solid 2px #fdcd0b;
+    border-right: solid 2px #fdcd0b;
+    border-left: solid 2px #fdcd0b;
+    position: absolute;
+    background-color: #000;
+    top: 34px;
+    left: 0px;
+    display: none;
+    z-index: 999;
+    li {
+      a {
+        display: block;
+        padding: 5px;
+        color: #fff;
+        border-bottom: solid 1px #fdcd0b;
+        &:hover {
+          text-decoration: none;
+        }
+        span {
+          margin-right: 5px;
+        }
+      }
+      // option grup
+      ul {
+        padding: 0px;
+        list-style: none;
+        background-color: rgba(255, 251, 251, 0.16);
+        li {
+          a {
+            padding-left: 15px;
+            font-size: 12px;
+            line-height: 12px;
+          }
+        }
+      }
+    }
+  }
+  &.active {
+    ul[option] {
+      display: block;
+    }
+    [dropdown-arrow] {
+      img {
+        transition: all 300ms ease;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+.courses-bottom {
+  margin-top: 15px;
+  input[type="button"] {
+    border: solid 2px #fdcd0b;
+    background: rgba(253,205,11, 0.5);
+    border-radius: 0px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 6px 12px 4px 12px;
+    @media only screen and (max-width:350px) {
+      font-size: 14px;
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+//
+.tree_popup {
+  width: 36px;
+  height: 36px;
+  float: left;
+  margin-left: 8px;
+  cursor: pointer;
+  @media only screen and (max-width:1023px) {
+    display: none;
+  }
+}
+// .custom-controls-container {
+//   @media only screen and (max-width:600px) {
+//     display: none;
+//   }
+// }

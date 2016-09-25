@@ -1,0 +1,188 @@
+.mega-contener {
+  display: block;
+  text-align: left;
+  @media only screen and (max-width:767px) {
+    margin-bottom: 15px;
+  }
+}
+.mega-contener h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.mega-contener h3 {
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: normal;
+}
+.mega-contener h4 {
+  font-size: 26px;
+  color: #FFFFFF;
+  font-weight: normal;
+  font-style: italic;
+}
+.mega-contener p {
+  font-size: 15px;
+  color: #FFFFFF;
+  font-weight: normal;
+}
+.mega-contener a {
+  font-size: 15px;
+  color: #fff;
+  font-weight: normal;
+  text-transform: none;
+  padding: 0;
+  line-height: inherit !important;
+  text-decoration: underline;
+  &:hover {
+    color: #0088ce;
+    text-decoration: none;
+  }
+}
+//
+.megaPackImg {
+  @media only screen and (max-width:767px) {
+    margin-bottom: 15px;
+  }
+  > img {
+    @media only screen and (max-width:767px) {
+      width: 70%;
+    }
+  }
+}
+// smk_accordion
+.smk_accordion {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+/**
+ * --------------------------------------------------------------
+ * Section
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in {
+  border: 1px solid #ccc;
+  position: relative;
+  //z-index: 10;
+  margin-top: -1px;
+  //overflow: hidden;
+}
+/**
+ * --------------------------------------------------------------
+ * Head
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in .acc_head {
+  position: relative;
+  background: #FDFDFD;
+  padding: 10px;
+  font-size: 12px;
+  display: block;
+  cursor: pointer;
+}
+.smk_accordion .accordion_in .last {
+  position: relative;
+  background: #cdd46a;
+  padding: 10px;
+  font-size: 12px;
+  display: block;
+  cursor: pointer;
+}
+.smk_accordion .accordion_in .acc_head > span {
+  display: inline-block;
+  width: auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-right: 10px;
+}
+.numburof .acc_icon_expand {
+  display: none !important;
+}
+.smk_accordion .accordion_in .acc_head ul {
+  display: inline-block;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+.smk_accordion .accordion_in .acc_head ul li {
+  display: inline-block;
+}
+.smk_accordion .accordion_in .acc_head ul li a {
+  display: block;
+  text-transform: none !important;
+  line-height: inherit !important;
+  font-size: 10px;
+  background: #e2e3b7;
+  color: #333333;
+  padding: 5px 10px;
+  margin-top: 0;
+}
+.smk_accordion .accordion_in .acc_head ul li a:hover {
+  text-decoration: underline;
+}
+.smk_accordion .accordion_in .acc_head .acc_icon_expand {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -9px;
+  background: url("../images/plusminus.png") center 0;
+}
+/**
+ * --------------------------------------------------------------
+ * Content
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in .acc_content {
+  background: rgba(0, 0, 0, 0.5);
+  color: #7B7E85;
+  padding: 10px;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+.smk_accordion .accordion_in .acc_content h1:first-of-type,
+.smk_accordion .accordion_in .acc_content h2:first-of-type,
+.smk_accordion .accordion_in .acc_content h3:first-of-type,
+.smk_accordion .accordion_in .acc_content h4:first-of-type,
+.smk_accordion .accordion_in .acc_content h5:first-of-type,
+.smk_accordion .accordion_in .acc_content h6:first-of-type {
+  margin-top: 5px;
+}
+/**
+ * --------------------------------------------------------------
+ * General
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in:first-of-type,
+.smk_accordion .accordion_in:first-of-type .acc_head {
+  border-radius: 0 0 0 0;
+}
+.smk_accordion .accordion_in:last-of-type,
+.smk_accordion .accordion_in:last-of-type .acc_content {
+  border-radius: 0 0 0 0;
+}
+.smk_accordion .accordion_in.acc_active > .acc_content {
+  display: block;
+}
+.smk_accordion .accordion_in.acc_active > .acc_head {
+  background: #F9F9F9;
+}
+.smk_accordion .accordion_in.acc_active > .last {
+  background: #cdd46a !important;
+}
+.smk_accordion .accordion_in.acc_active > .acc_head .acc_icon_expand {
+  background: url("../images/plusminus.png") center -18px;
+}
+.smk_accordion.acc_with_icon .accordion_in .acc_content,
+.smk_accordion.acc_with_icon .accordion_in .acc_head {
+  padding-left: 20px;
+}

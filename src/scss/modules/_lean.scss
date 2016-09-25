@@ -1,0 +1,63 @@
+.find-courses-wrap {
+  display: block;
+  text-align: center;
+  padding: 50px;
+  .dropdown-container {
+    display: inline-block;
+    max-width: 450px;
+    width: 100%;
+    float: none;
+    margin: auto;
+    > a {
+      border: solid 3px #1398d4;
+      color: #000;
+    }
+    .courses-bottom {
+      input[type="button"] {
+        background: rgba(19, 152, 212, 0.3);
+        border: 2px solid #3eabdc;
+        &:hover {
+          color: #000 !important;
+        }
+      }
+    }
+    .selection {
+      > a {
+        border: solid 3px #1398d4;
+        color: #000;
+        [dropdown-arrow] {
+          background-color: #1398d4;
+          font-weight: 700;
+        }
+        &:hover, &:focus {
+          color: #000;
+        }
+      }
+      ul[option] {
+        border-bottom: solid 2px #1398d4;
+        border-right: solid 2px #1398d4;
+        border-left: solid 2px #1398d4;
+        li {
+          a {
+            border: solid 1px #1398d4;
+            text-align: left;
+            span {
+              float: left;
+            }
+          }
+        }
+      }
+      &.active {
+        ul[option] {
+          display: block;
+        }
+        [dropdown-arrow] {
+          img {
+            transition: all 300ms ease;
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}

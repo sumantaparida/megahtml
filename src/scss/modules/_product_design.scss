@@ -1,0 +1,22 @@
+.design-container {
+  @media only screen and (min-width:1023px) {
+    background-color: #dedede;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 30px;
+      height: 60px;
+      left: -29px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border-top:30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-right:30px solid #dedede;
+    }
+  }
+}
+.card-liner {
+  padding: 0px;
+  margin-bottom: 25px;
+}

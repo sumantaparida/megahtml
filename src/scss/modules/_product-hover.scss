@@ -1,0 +1,101 @@
+.product-hover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+  width: 82%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  @media only screen and (max-width:767px) {
+    width: 70%;
+  }
+  &::before {
+    border-bottom: solid 35px rgb(236, 236, 236);
+    border-top: solid 10px transparent;
+    border-right: solid 312px transparent;
+    border-left: solid 0px transparent;
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    @media only screen and (max-width:767px) {
+      border-bottom: solid 26px #3c4252;
+      border-right: solid 215px transparent;
+    }
+  }
+  .Pcontainer {
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    background: #dad836;
+    padding: 28px;
+    @media only screen and (max-width:767px) {
+      padding: 15px;
+      height: 78%;
+    }
+    h1 {
+      font-size: 45px;
+      font-weight: 300;
+      margin: 0px 0px 5px 0px;
+      color: #000;
+      line-height: 31px;
+      text-indent: -2px;
+      @media only screen and (max-width:767px) {
+        font-size: 30px;
+        line-height: 25px;
+      }
+      span {
+        display: block;
+        font-size: 30px;
+        letter-spacing: 4px;
+        @media only screen and (max-width:767px) {
+          font-size: 18px;
+        }
+        &:last-child {
+          font-size: 18px;
+          @media only screen and (max-width:767px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    p {
+      font-size: 16px;
+    }
+    a.pbutton{
+      display: block;
+      padding: 8px 5px;
+      background-color: #fff;
+      margin-bottom: 10px;
+      color: #000;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+    a {
+      text-decoration: underline;
+      color: #000;
+    }
+  }
+}
+.megaPackImg {
+  &:hover {
+    .product-hover {
+      opacity: 1;
+    }
+  }
+}

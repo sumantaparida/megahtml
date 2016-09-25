@@ -1,0 +1,217 @@
+.bannerContent {
+  h1 {
+    color: #fff;
+    font-size: 40px;
+    @media only screen and (max-width:767px) {
+      font-size: 30px;
+    }
+  }
+  p {
+    color: #fff;
+    font-size: 20px;
+    a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      float: left;
+      margin-top: 10px;
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+      span {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+//
+.greenBox {
+  float: right;
+  padding: 15px 20px;
+  color: #fff;
+  background: #02ba1d;
+  font-size: 21px;
+  margin-top: 20px;
+}
+// Navigation
+.navigation {
+  padding: 15px 0px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  ul[role-nav] {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    li {
+      display: inline-block;
+      margin: 0px 5px;
+      a {
+        text-transform: uppercase;
+        color: #000;
+        font-size: 13px;
+        padding: 5px;
+        display: inline-block;
+        &:hover, &.active, &:focus {
+          text-decoration: none;
+          color: #0bb051;
+          border-bottom: solid 1px #00ff00;
+        }
+      }
+      &:last-child {
+        a {
+          color: #ef440f;
+        }
+      }
+    }
+  }
+}
+// bookContainer
+.bookContainer {
+  .book {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    height: 275px;
+    overflow: hidden;
+    cursor: pointer;
+    .imgcontainer {
+      img {
+        transition:transform 1s ease-out 0s;
+      }
+    }
+    .bookdetails {
+      h5 {
+        font-weight: 700;
+        font-size: 16px;
+      }
+      p {
+        color: #aeaeae;
+        span {
+          display: inline-block;
+          margin: 0px 5px;
+        }
+      }
+    }
+    &:hover {
+      .bookcartcontainer {
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+      }
+      .imgcontainer {
+        img {
+          margin-top: 3px;
+        }
+      }
+      p {
+        transition:transform .5s ease 0s;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+// universeContainer
+.universeContainer {
+  background-image: url('../images/bg-pattrns.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0px 10px 0px;
+  &::before {
+    width: 100px;
+    height: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    content: '';
+    border-top: solid 49px #f8f8f8;
+    border-bottom: solid 0px transparent;
+    border-left: solid 49px transparent;
+    border-right: solid 49px transparent;
+  }
+  .bookdetails {
+    text-align: center;
+    &> div {
+      width: 310px;
+      display: inline-block;
+    }
+    h5 {
+      color: #fff;
+      font-size: 30px;
+    }
+    p {
+      color: #fff;
+      span {
+        display: inline-block;
+        margin: 0px 5px;
+      }
+    }
+  }
+}
+// Button Container
+.bookcartcontainer {
+  position: absolute;
+  width: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+  transition:transform .5s ease 0s;
+  -webkit-transform: translate3d(0,50px,0);
+  -moz-transform: translate3d(0,50px,0);
+  -o-transform: translate3d(0,50px,0);
+  -ms-transform: translate3d(0,50px,0);
+  transform: translate3d(0,50px,0);
+  height: 30px;
+  a {
+    border: 1px solid #d4d4d4;
+    padding: 3px 5px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 11px;
+    color: #6d6a6a;
+    height: 28px;
+    transition: all .2s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #fff;
+    &:hover {
+      text-decoration: none;
+      color: #999;
+    }
+    span {
+      line-height: 15px;
+    }
+    img {
+      margin-top: -2px;
+      margin-right: 6px;
+    }
+  }
+  .cart2 {
+    width: 37px;
+    float: right;
+    white-space: nowrap;
+    &:hover {
+      width: 108px;
+      color: #0bb051;
+      & ~ .learnmore {
+        width: 37px;
+      }
+    }
+  }
+  .learnmore {
+    white-space: nowrap;
+    width: 108px;
+    &:hover {
+      color: #0bb051;
+    }
+  }
+}

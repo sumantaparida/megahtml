@@ -1,0 +1,115 @@
+.ultrapack-container {
+  background: url('../images/ultrapack.jpg') top center no-repeat #154c00;
+  color: #fff;
+  height: auto;
+  padding: 20px 0px;
+  margin-bottom: 25px;
+  @media only screen and (max-width:1024px) {
+    background-repeat: repeat-y;
+  }
+  // conteiner
+  .container {
+    @media only screen and (min-width: 1200px) {
+      width: 990px;
+    }
+  }
+  //
+  .ultrapack-right {
+    padding: 10px 0px;
+    @media only screen and (max-width:1024px) {
+      padding: 0px;
+    }
+    h2 {
+      font-size: 18px;
+      margin: 5px 0px;
+      @media only screen and (max-width:1024px) {
+        font-size: 12px;
+      }
+    }
+    .see-more {
+      a {
+        background: #FFF;
+        font-size: 14px;
+        color: #333;
+        font-weight: bold;
+        padding: 10px 15px;
+        margin-top: 5px;
+        text-transform: uppercase;
+        font-family: $font-family-roboto;
+        display: inline-block;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .up {
+    font-family: $font-family-lato;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 300;
+    float: left;
+    width: 100%;
+    padding: 10px 0px;
+    @media only screen and (max-width:1024px) {
+      margin: 0px;
+      padding: 0px;
+      font-size: 20px;
+    }
+    @media only screen and (min-width:767px) and (max-width:1120px) {
+      font-size: 35px;
+      margin-top: 12px;
+    }
+    @media only screen and (min-width:350px) and (max-width:376px) {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    span {
+      float: left;
+      margin-right: 5px;
+      @media only screen and (max-width:1024px) {
+        margin-bottom: 8px;
+      }
+    }
+    > span.pack {
+      font-weight: 700;
+    }
+    > span.god {
+      font-weight: 700;
+      font-size: 55px;
+      margin-top: -11px;
+      @media only screen and (max-width:1024px) {
+        font-size: 35px;
+      }
+      @media only screen and (min-width:767px) and (max-width:1120px) {
+        font-size: 50px;
+      }
+      > i {
+        font-size: 20px;
+        display: inline-block;
+        font-style: normal;
+        @media only screen and (max-width:1024px) {
+          font-size: 17px;
+        }
+        @media only screen and (min-width:767px) and (max-width:1120px) {
+          font-size: 17px;
+        }
+      }
+    }
+    > span.un {
+      font-weight: 100;
+      font-size: 55px;
+      margin-top: -11px;
+      @media only screen and (max-width:1024px) {
+        font-size: 25px;
+      }
+      @media only screen and (min-width:350px) and (max-width:376px) {
+        font-size: 19px;
+        margin-top: 0px;
+      }
+      @media only screen and (min-width:767px) and (max-width:1120px) {
+        font-size: 55px;
+      }
+    }
+  }
+}

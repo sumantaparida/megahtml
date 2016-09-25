@@ -1,0 +1,116 @@
+.testimonials-wrapper {
+  width: 100%;
+  padding: 40px 0;
+  @media only screen and (min-width:1024px) {
+    //display: flex;
+  }
+  @media only screen and (min-width:768px) and (max-width:1024px) {
+    display: flex;
+  }
+  .left-cont {
+    background-color: #1398d4;
+    background-image: url("../images/chat_bg.png");
+    background-repeat: no-repeat;
+    background-position: 15px 0px;
+    padding-bottom: 26px;
+    @media only screen and (min-width:1024px) {
+      padding-bottom: 45px;
+      padding-top: 30px;
+      min-height: 312px;
+    }
+  }
+  .right-cont {
+    background: #106480;
+    @media only screen and (min-width:1024px) {
+      min-height: 312px;
+    }
+    @media only screen and (max-width:1024px) {
+      > div {
+        padding: 0px;
+      }
+    }
+  }
+}
+.support-section {
+  display: block;
+  text-align: left;
+  padding-right: 30px;
+  h2 {
+    font-size: 35px;
+    color: #fdcc0a;
+    font-weight: normal;
+  }
+  p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 15px;
+    line-height: 20px;
+    @media only screen and (max-width:1024px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  .chat-now {
+    display: inline-block;
+    background: url("../images/chat-now.png") top left no-repeat;
+    height: 30px;
+    width: 152px;
+    margin-top: 20px;
+  }
+}
+.testimonials {
+  display: block;
+  padding: 85px 40px;
+  background-image: url("../images/topcomma.png"), url("../images/bottomcomma.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  height: 278px;
+  width: 476px;
+  position: relative;
+  overflow: hidden;
+  @media only screen and (max-width:1024px) {
+    height: auto;
+    padding: 35px 40px;
+  }
+  @media only screen and (min-width:768px) and (max-width:1024px) {
+    padding: 90px 40px 35px 40px;
+  }
+  .item {
+    p {
+      font-size: 16px;
+      color: #FFF;
+      line-height: 19px;
+      @media only screen and (max-width:1024px) {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    .author {
+      font-size: 18px;
+      color: #FFF;
+      margin-top: 15px;
+      font-weight: 100;
+      @media only screen and (max-width:1024px) {
+        font-size: 14px;
+      }
+    }
+    .clintLogo {
+      img {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        @media only screen and (min-width:768px) and (max-width:1024px) {
+          width: 90%;
+          height: auto;
+        }
+        @media only screen and (min-width:1025px) {
+          width: 90%;
+          height: auto;
+        }
+        @media only screen and (max-width:767px) {
+          margin: auto auto 10px auto;
+        }
+      }
+    }
+  }
+}

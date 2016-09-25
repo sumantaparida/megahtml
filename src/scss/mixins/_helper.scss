@@ -1,0 +1,90 @@
+// padding
+@mixin nopadding($zero:0px) {
+	padding: $zero !important;
+}
+// padding right
+@mixin padding-right($pr:auto) {
+	padding-right: $pr;
+}
+// padding left
+@mixin padding-left($pl:auto) {
+	padding-left: $pl;
+}
+// margin
+@mixin nomargin($zero:0px) {
+	margin: $zero !important;
+}
+// background bg color
+@mixin background-bg($bgcolor: #f5f3e8) {
+	background-color: $bgcolor;
+}
+
+// position
+@mixin position($pos:relative) {
+	position: $pos;
+}
+// width
+@mixin width-percent($w:100%) {
+	width: $w;
+}
+// height
+@mixin height-auto($h:auto) {
+	height: $h;
+}
+
+// fonts
+@mixin font-face($font: $font-family-roboto) {
+	font-family: $font;
+}
+// fonts Weight
+@mixin font-weight($fontweight:400) {
+	font-weight: $fontweight;
+}
+// text decoration
+@mixin text-decoration($decoration:none) {
+	text-decoration: $decoration;
+}
+// text color
+@mixin text-color($color: $greyish-brown) {
+	color: $color;
+}
+// Line height
+@mixin line-height($lheight:18px) {
+	line-height: $lheight;
+}
+// Border Top Style
+@mixin border-top($style: solid, $color: #dedede, $width: 1px) {
+	border-top-style: $style;
+	border-top-color: $color;
+	border-top-width: $width;
+}
+
+// Border right Style
+@mixin border-right($style: solid, $color: #dedede, $width: 1px) {
+	border-right-style: $style;
+	border-right-color: $color;
+	border-right-width: $width;
+}
+// Border bottom Style
+@mixin border-bottom($style: solid, $color: #dedede, $width: 1px) {
+	border-bottom-style: $style;
+	border-bottom-color: $color;
+	border-bottom-width: $width;
+}
+// Border left Style
+@mixin border-left($style: solid, $color: #dedede, $width: 1px) {
+	border-left-style: $style;
+	border-left-color: $color;
+	border-left-width: $width;
+}
+
+// Display
+@mixin display($dis: block) {
+	display: $dis;
+}
+// sprite img
+%sprite-image {
+    background-repeat: no-repeat;
+		background-image: url('../images/sprite.png');
+		background-size: auto;
+}

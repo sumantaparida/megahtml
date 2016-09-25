@@ -1,0 +1,110 @@
+.commentContainer {
+  margin-bottom: 20px;
+  padding: 15px 0 !important;
+}
+.comment-section {
+  display: block;
+}
+.comment-section h2 {
+  display: block;
+  font-size: 22px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.comment-section .title-set {
+  display: block;
+  margin-top: 15px;
+}
+.comment-section .title-set .left {
+  float: left;
+  width: auto;
+}
+.comment-section .title-set .left .comment-pic {
+  float: left;
+  border: solid 2px #999;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 55px;
+  height: 55px;
+  background-color: #dedede;
+}
+.author-reting {
+  float: left;
+  width: auto;
+  height: auto;
+  margin-left: 0;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+.author-reting p {
+  float: left;
+  width: 100%;
+  margin: 0;
+  font-size: 12px;
+  a {
+    color: red;
+    .fa {
+      color: #dac206;
+      font-size: 16px;
+    }
+    &:hover {
+      text-decoration: none;
+      i {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.author-reting p span {
+  text-transform: uppercase;
+  color: #0000FF;
+  font-weight: 700;
+  margin-right: 5px;
+}
+.comment-section .title-set .right {
+  float: right;
+  width: auto;
+}
+.comment-section .title-set .full {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+}
+.comment-section .title-set .full p {
+  font-size: 14px;
+  color: #333333;
+  padding-left: 55px;
+}
+.comment-section .title-set .full p a {
+  color: #428ccd;
+}
+//
+.div-right {
+  display: block;
+  text-align: right;
+}
+.div-right ul {
+  display: block;
+  text-align: right;
+}
+.div-right ul li {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 13px;
+}
+.div-right ul li a {
+  color: #333;
+  .fa {
+    font-size: 16px;
+    color: #1398d4;
+  }
+  &:hover {
+    text-decoration: none;
+    .fa {
+      text-decoration: none;
+    }
+  }
+}
+.div-right ul li a:hover {
+  color: #56acd8;
+}

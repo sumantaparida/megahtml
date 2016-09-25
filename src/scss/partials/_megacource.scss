@@ -1,0 +1,35 @@
+@import '../modules/_sub-links.scss';
+@import '../modules/_megabanner.scss';
+@import '../modules/_bannerbottom.scss';
+@import '../modules/_tabContainer.scss';
+@import '../modules/_gallery.scss';
+@import '../modules/_commentContainer.scss';
+@import '../modules/_allproductpage.scss';
+@import '../modules/_product-hover.scss';
+@import '../modules/_addCardContainer.scss';
+@import '../modules/_lightboxContainer.scss';
+@import '../modules/_product_design.scss';
+@import '../modules/_vertical-tabs.scss';
+@import '../modules/_extra.scss';
+.megacoursesBanner {
+  height: 594px;
+  background-image: url('../images/megacorses-page-banner.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 80px;
+  @media only screen and (max-width:767px) {
+    height: 1000px;
+  }
+}
+//
+.allmegacoursesBanner {
+  height: 594px;
+  background-image: url('../images/product-page-banner.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media only screen and (max-width:767px) {
+    height: 475px;
+  }
+}

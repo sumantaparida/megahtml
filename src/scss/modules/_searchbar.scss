@@ -1,0 +1,18 @@
+#search_mini_form {
+	@include nopadding(12px 0px);
+	#searchval {
+		@include border-top(solid, #e4d2be, 1px);
+		@include border-right(solid, #e4d2be, 1px);
+		@include border-bottom(solid, #e4d2be, 1px);
+		@include border-left(solid, #e4d2be, 1px);
+		@include height-auto(35px);
+		border-radius: 0px;
+	}
+	.search-button {
+		@include background-bg($rouge);
+		@include text-color(#ffffff);
+		@include font-weight(700);
+		letter-spacing: 1.5px;
+		border: solid 2px $rouge;
+	}
+}

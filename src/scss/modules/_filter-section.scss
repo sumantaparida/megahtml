@@ -1,0 +1,114 @@
+.filter-section {
+
+}
+//
+.filter-section {
+    margin-bottom: 25px;
+}
+
+.filter-section h5 {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+    color: #727475;
+    border-bottom: 1px solid #d2d2d3;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+
+.filter-section .list-margin-bottom li {
+    margin-bottom: 14px
+}
+
+.filter-section ul.check-list li {
+    margin-bottom: 14px;
+    overflow: hidden;
+}
+
+.filter-section ul li .prettycheckbox {
+    float: left;
+}
+
+.filter-section ul.check-list li.toggle-item {
+    margin-bottom: 0;
+}
+
+.filter-section ul.locality-info li {
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.filter-section ul.locality-info li a {
+    display: block;
+    font-size: 16px;
+}
+
+.filter-section ul.locality-info li p {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.filter-section ul.locality-info li p i {
+    color: #53ca67;
+    font-size: 10px;
+}
+
+.filter-section ul.locality-info li p i.icon-growth-down {
+    color: #ff6950;
+}
+
+.filter-section ul.locality-info li p span {
+    font-weight: 300;
+}
+
+.filter-section ul li span.cnt {
+    font-size: 10px;
+    float: right;
+    line-height: 2;
+    font-weight: 700;
+}
+
+.filter-section ul li label {
+    font-size: 13px;
+    color: #007183;
+    margin-top: 0!important;
+    text-transform: none;
+    font-weight: 600;
+}
+
+.filter-section ul li label span {
+    font-weight: 400;
+}
+
+.less-toggle,.show-more-filters {
+    font-size: 11px;
+}
+
+.less-toggle i {
+    color: #b6b5b5;
+    float: left;
+    margin-right: 9px;
+    font-size: 18px;
+}
+
+.filter-section ul.token-input-list {
+    height: 34px;
+    padding: 5px 6px 5px 25px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.filter-section .form-group i {
+    position: absolute;
+    left: 6px;
+    top: 0;
+    line-height: 34px;
+}
+
+.filter-section button {
+    height: 34px;
+}
+
+.filter-section ul.token-input-list li input {
+    padding-left: 4px;
+}
