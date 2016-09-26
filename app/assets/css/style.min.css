@@ -3921,13 +3921,69 @@ div[rel='scrollcontent2'] {
   text-align: center;
   margin-bottom: 25px;
   margin-top: 15px;
-  height: 275px;
+  height: 310px;
   overflow: hidden;
   cursor: pointer;
+}
+.bookContainer .book .imgcontainer {
+  position: relative;
+  height: 210px;
+}
+.bookContainer .book .imgcontainer .shortPack {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  width: 65px;
+  height: 60px;
+  background-color: red;
+}
+.bookContainer .book .imgcontainer .shortPack img {
+  width: 100%;
+}
+.bookContainer .book .imgcontainer .hoverimage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bookContainer .book .imgcontainer .hoverimage.imagesplash-splash {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.3s ease all;
+          transition: 0.3s ease all;
+}
+.bookContainer .book .imgcontainer .hoverimage.imagesplash-splash img {
+  margin: 0 auto;
+  height: auto;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  max-width: 210px;
+  max-height: 200px;
 }
 .bookContainer .book .imgcontainer img {
   -webkit-transition: -webkit-transform 1s ease-out 0s;
           transition: transform 1s ease-out 0s;
+  z-index: 1;
+}
+.bookContainer .book .bookdetails .btnB {
+  padding: 4px 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #aeaeae;
+  color: #000;
+}
+.bookContainer .book .bookdetails .btnB:hover {
+  text-decoration: none;
 }
 .bookContainer .book .bookdetails h5 {
   font-weight: 700;
@@ -3935,18 +3991,24 @@ div[rel='scrollcontent2'] {
 }
 .bookContainer .book .bookdetails p {
   color: #aeaeae;
+  margin-top: 15px;
 }
 .bookContainer .book .bookdetails p span {
   display: inline-block;
   margin: 0px 5px;
 }
+.bookContainer .book:hover .imgcontainer .hoverimage.imagesplash-splash {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: 0.3s ease all;
+          transition: 0.3s ease all;
+}
 .bookContainer .book:hover .bookcartcontainer {
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-}
-.bookContainer .book:hover .imgcontainer img {
-  margin-top: 3px;
 }
 .bookContainer .book:hover p {
   -webkit-transition: -webkit-transform .5s ease 0s;
@@ -3959,7 +4021,7 @@ div[rel='scrollcontent2'] {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px 0px 10px 0px;
+  padding: 100px 0px 30px 0px;
 }
 .universeContainer::before {
   width: 100px;
@@ -3989,10 +4051,41 @@ div[rel='scrollcontent2'] {
 }
 .universeContainer .bookdetails p {
   color: #fff;
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
 }
 .universeContainer .bookdetails p span {
   display: inline-block;
   margin: 0px 5px;
+}
+.universeContainer .bookdetails .universeHover {
+  padding-bottom: 20px;
+}
+.universeContainer .bookdetails .universeHover:hover .bookcartcontainer {
+  -webkit-transition: -webkit-transform .5s ease 0s;
+  transition: transform .5s ease 0s;
+  -webkit-transform: translate3d(0, 0px, 0);
+  -ms-transform: translate3d(0, 0px, 0);
+  transform: translate3d(0, 0px, 0);
+}
+.universeContainer .bookdetails .universeHover .btnB {
+  padding: 4px 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #aeaeae;
+  color: #000;
+}
+.universeContainer .bookdetails .universeHover .btnB:hover {
+  text-decoration: none;
+}
+.universeContainer .bookdetails .bookcartcontainer {
+  width: 150px;
+  -webkit-transform: translate3d(0, 60px, 0);
+  -ms-transform: translate3d(0, 60px, 0);
+  transform: translate3d(0, 60px, 0);
 }
 
 .bookcartcontainer {
@@ -5232,6 +5325,11 @@ div[rel='scrollcontent2'] {
   float: left;
   margin-right: 15px;
 }
+@media only screen and (max-width: 640px) {
+  .tranquilidadWrapper .tranquilidad > div p img {
+    width: 70px;
+  }
+}
 .tranquilidadWrapper .tranquilidad > div p span {
   margin-top: 25px;
   float: left;
@@ -5240,6 +5338,11 @@ div[rel='scrollcontent2'] {
 @media only screen and (min-width: 1025px) {
   .tranquilidadWrapper .tranquilidad > div p span {
     margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .tranquilidadWrapper .tranquilidad > div p span {
+    margin-top: 10px;
   }
 }
 .tranquilidadWrapper .tranquilidad > div p span.three {
