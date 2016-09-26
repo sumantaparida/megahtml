@@ -3888,6 +3888,8 @@ div[rel='scrollcontent2'] {
   padding: 0px;
   margin: 0px;
   display: inline-block;
+  float: none;
+  border-bottom: none;
 }
 @media only screen and (max-width: 1023px) {
   .navigation ul[role-nav] {
@@ -3897,6 +3899,7 @@ div[rel='scrollcontent2'] {
 .navigation ul[role-nav] li {
   display: inline-block;
   margin: 0px 5px;
+  float: none;
 }
 .navigation ul[role-nav] li a {
   text-transform: uppercase;

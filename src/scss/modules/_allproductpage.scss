@@ -44,12 +44,15 @@
     padding: 0px;
     margin: 0px;
     display: inline-block;
+    float: none;
+    border-bottom: none;
     @media only screen and (max-width:1023px) {
       display: none;
     }
     li {
       display: inline-block;
       margin: 0px 5px;
+      float: none;
       a {
         text-transform: uppercase;
         color: #000;
