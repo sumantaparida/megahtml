@@ -11,18 +11,30 @@
   color: #FFFFFF;
   font-weight: bold;
   margin-top: 5px;
+  @media only screen and (max-width:767px) {
+    font-size: 26px;
+    margin-bottom: 0px;
+  }
 }
 .mega-contener h3 {
   font-size: 26px;
   text-transform: uppercase;
   color: #FFFFFF;
   font-weight: normal;
+  @media only screen and (max-width:767px) {
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
 }
 .mega-contener h4 {
   font-size: 26px;
   color: #FFFFFF;
   font-weight: normal;
   font-style: italic;
+  @media only screen and (max-width:767px) {
+    font-size: 22px;
+    margin-top: 0px;
+  }
 }
 .mega-contener p {
   font-size: 15px;
