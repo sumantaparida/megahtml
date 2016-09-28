@@ -32,6 +32,10 @@
   background: #02ba1d;
   font-size: 21px;
   margin-top: 20px;
+  @media only screen and (min-width:480px) and (max-width:998px) {
+    width: 100%;
+    text-align: center;
+  }
 }
 // Navigation
 .navigation {
@@ -75,13 +79,26 @@
 }
 // bookContainer
 .bookContainer {
+  &.tabDataContainer {
+  > div {
+      @media only screen and (min-width:480px) and (max-width:768px) {
+        width: 50%;
+      }
+      @media only screen and (min-width:769px) and (max-width:1024px) {
+        width: 33.333366%;
+      }
+    }
+  }
   .book {
     text-align: center;
     margin-bottom: 25px;
-    margin-top: 15px;
-    height: 310px;
+    padding-top: 23px;
+    height: 335px;
     overflow: hidden;
     cursor: pointer;
+    @media only screen and (max-width:768px) {
+      height: 360px;
+    }
     .imgcontainer {
       position: relative;
       height: 210px;
@@ -135,8 +152,8 @@
         font-size: 12px;
         white-space: nowrap;
         text-align: center;
-        background-color: #aeaeae;
-        color: #000;
+        background-color: #e0e0e0;
+        color: #9a9a9a;
         &:hover {
           text-decoration: none;
         }
@@ -158,9 +175,9 @@
       .imgcontainer {
         .hoverimage {
           &.imagesplash-splash {
-            -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-            transform: scale(1);
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
             opacity: 1;
             transition: 0.3s ease all;
           }
@@ -217,7 +234,7 @@
       float: left;
       width: 100%;
       margin-bottom: 15px;
-      margin-top: 5px;
+      margin-top: 10px;
       span {
         display: inline-block;
         margin: 0px 5px;
@@ -247,17 +264,22 @@
       }
     }
     .bookcartcontainer {
-      width: 150px;
+      //width: 150px;
       -webkit-transform: translate3d(0, 60px, 0);
       -ms-transform: translate3d(0, 60px, 0);
       transform: translate3d(0, 60px, 0);
+      @media only screen and (max-width:768px) {
+        -webkit-transform: translate3d(0, 5px, 0);
+        -ms-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+      }
     }
   }
 }
 // Button Container
 .bookcartcontainer {
   position: absolute;
-  width: 150px;
+  width: 172px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -270,12 +292,20 @@
   -ms-transform: translate3d(0,50px,0);
   transform: translate3d(0,50px,0);
   height: 30px;
+  @media only screen and (max-width:768px) {
+    -webkit-transform: translate3d(0,-0,0);
+    -moz-transform: translate3d(0,-0,0);
+    -o-transform: translate3d(0,-0,0);
+    -ms-transform: translate3d(0,-0,0);
+    transform: translate3d(0,-0,0);
+  }
   a {
     border: 1px solid #d4d4d4;
     padding: 3px 5px;
     display: inline-block;
+    float: right;
     font-weight: 500;
-    font-size: 11px;
+    font-size: 12px;
     color: #6d6a6a;
     height: 28px;
     transition: all .2s ease;
@@ -287,11 +317,12 @@
       color: #999;
     }
     span {
-      line-height: 15px;
+      line-height: 19px;
     }
     img {
       margin-top: -2px;
       margin-right: 6px;
+      float: left;
     }
   }
   .cart2 {
@@ -299,16 +330,20 @@
     float: right;
     white-space: nowrap;
     &:hover {
-      width: 108px;
+      width: 130px;
       color: #0bb051;
       & ~ .learnmore {
-        width: 37px;
+        width: 35px;
       }
     }
   }
   .learnmore {
     white-space: nowrap;
-    width: 108px;
+    width: 120px;
+    margin-right: 2.5px;
+    span {
+      padding-right: 13px;
+    }
     &:hover {
       color: #0bb051;
     }

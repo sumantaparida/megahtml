@@ -3182,8 +3182,8 @@ input[type="search"] {
   text-decoration: underline;
 }
 .mega-contener a:hover {
-  color: #0088ce;
-  text-decoration: none;
+  color: #fff;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 767px) {
@@ -3555,6 +3555,11 @@ ul[data-nasted-list] li a span img {
   margin: 20px 0;
   overflow: hidden;
 }
+@media only screen and (max-width: 768px) {
+  .gallery-wrap {
+    margin: 0px 0 20px 0;
+  }
+}
 
 .gallery-wrap h2 {
   color: #333333;
@@ -3601,6 +3606,11 @@ div[rel='scrollcontent2'] {
   width: 2712px;
   padding-top: 30px;
   height: 416px !important;
+}
+@media only screen and (max-width: 768px) {
+  .scrollcontent2-content {
+    margin-top: -5px;
+  }
 }
 
 /* for horizontal content, width should be set to total width of all floated inner container elements */
@@ -3907,6 +3917,12 @@ div[rel='scrollcontent2'] {
   font-size: 21px;
   margin-top: 20px;
 }
+@media only screen and (min-width: 480px) and (max-width: 998px) {
+  .greenBox {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 .navigation {
   padding: 15px 0px;
@@ -3948,13 +3964,28 @@ div[rel='scrollcontent2'] {
   color: #ef440f;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .bookContainer.tabDataContainer > div {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .bookContainer.tabDataContainer > div {
+    width: 33.333366%;
+  }
+}
 .bookContainer .book {
   text-align: center;
   margin-bottom: 25px;
-  margin-top: 15px;
-  height: 310px;
+  padding-top: 23px;
+  height: 335px;
   overflow: hidden;
   cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .bookContainer .book {
+    height: 360px;
+  }
 }
 .bookContainer .book .imgcontainer {
   position: relative;
@@ -4010,8 +4041,8 @@ div[rel='scrollcontent2'] {
   font-size: 12px;
   white-space: nowrap;
   text-align: center;
-  background-color: #aeaeae;
-  color: #000;
+  background-color: #e0e0e0;
+  color: #9a9a9a;
 }
 .bookContainer .book .bookdetails .btnB:hover {
   text-decoration: none;
@@ -4029,9 +4060,9 @@ div[rel='scrollcontent2'] {
   margin: 0px 5px;
 }
 .bookContainer .book:hover .imgcontainer .hoverimage.imagesplash-splash {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
   opacity: 1;
   -webkit-transition: 0.3s ease all;
           transition: 0.3s ease all;
@@ -4085,7 +4116,7 @@ div[rel='scrollcontent2'] {
   float: left;
   width: 100%;
   margin-bottom: 15px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .universeContainer .bookdetails p span {
   display: inline-block;
@@ -4113,15 +4144,21 @@ div[rel='scrollcontent2'] {
   text-decoration: none;
 }
 .universeContainer .bookdetails .bookcartcontainer {
-  width: 150px;
   -webkit-transform: translate3d(0, 60px, 0);
   -ms-transform: translate3d(0, 60px, 0);
   transform: translate3d(0, 60px, 0);
 }
+@media only screen and (max-width: 768px) {
+  .universeContainer .bookdetails .bookcartcontainer {
+    -webkit-transform: translate3d(0, 5px, 0);
+    -ms-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+}
 
 .bookcartcontainer {
   position: absolute;
-  width: 150px;
+  width: 172px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -4134,12 +4171,20 @@ div[rel='scrollcontent2'] {
   transform: translate3d(0, 50px, 0);
   height: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .bookcartcontainer {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
 .bookcartcontainer a {
   border: 1px solid #d4d4d4;
   padding: 3px 5px;
   display: inline-block;
+  float: right;
   font-weight: 500;
-  font-size: 11px;
+  font-size: 12px;
   color: #6d6a6a;
   height: 28px;
   -webkit-transition: all .2s ease;
@@ -4153,11 +4198,12 @@ div[rel='scrollcontent2'] {
   color: #999;
 }
 .bookcartcontainer a span {
-  line-height: 15px;
+  line-height: 19px;
 }
 .bookcartcontainer a img {
   margin-top: -2px;
   margin-right: 6px;
+  float: left;
 }
 .bookcartcontainer .cart2 {
   width: 37px;
@@ -4165,15 +4211,19 @@ div[rel='scrollcontent2'] {
   white-space: nowrap;
 }
 .bookcartcontainer .cart2:hover {
-  width: 108px;
+  width: 130px;
   color: #0bb051;
 }
 .bookcartcontainer .cart2:hover ~ .learnmore {
-  width: 37px;
+  width: 35px;
 }
 .bookcartcontainer .learnmore {
   white-space: nowrap;
-  width: 108px;
+  width: 120px;
+  margin-right: 2.5px;
+}
+.bookcartcontainer .learnmore span {
+  padding-right: 13px;
 }
 .bookcartcontainer .learnmore:hover {
   color: #0bb051;
@@ -4198,7 +4248,7 @@ div[rel='scrollcontent2'] {
   }
 }
 .product-hover::before {
-  border-bottom: solid 35px #ececec;
+  border-bottom: solid 35px rgba(236, 236, 236, 0);
   border-top: solid 10px transparent;
   border-right: solid 312px transparent;
   border-left: solid 0px transparent;
@@ -4454,11 +4504,13 @@ div[rel='scrollcontent2'] {
 
 .mtabDropdown {
   width: 100%;
+  height: 45px;
   padding: 10px;
   font-size: 14px;
   display: none;
+  border-radius: 5px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   .mtabDropdown {
     display: block;
   }
@@ -4861,6 +4913,22 @@ div[rel='scrollcontent2'] {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .productPageBanner {
+    height: 440px;
+  }
+}
+@media only screen and (min-width: 999px) and (max-width: 1024px) {
+  .productPageBanner .bannerContent > div:first-child {
+    padding-left: 60px;
+  }
+}
+@media only screen and (min-width: 999px) and (max-width: 1024px) {
+  .productPageBanner .bannerContent > div:last-child {
+    padding-right: 60px;
+  }
+}
+
 .lightboxContainer #myCarousel {
   margin-top: 10%;
 }
@@ -4877,6 +4945,22 @@ div[rel='scrollcontent2'] {
 }
 .commentFormsection [rating] a .fa:hover::before {
   content: '\f005';
+}
+@media only screen and (max-width: 768px) {
+  .commentFormsection .btn-primary {
+    margin-left: 20%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .commentFormsection .form-control {
+    width: 80%;
+    float: right;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .commentFormsection .checkbox {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 1023px) {

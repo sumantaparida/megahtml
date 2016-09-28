@@ -2,6 +2,9 @@
   display: block;
   margin: 20px 0;
   overflow: hidden;
+  @media only screen and (max-width:768px) {
+    margin: 0px 0 20px 0;
+  }
 }
 .gallery-wrap h2 {
   color: #333333;
@@ -42,6 +45,9 @@ div[rel='scrollcontent2'] {
   width: 2712px;
   padding-top: 30px;
   height: 416px !important;
+  @media only screen and (max-width:768px) {
+    margin-top: -5px;
+  }
 }
 /* for horizontal content, width should be set to total width of all floated inner container elements */
 .gallery_container {
