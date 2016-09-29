@@ -3,5 +3,36 @@
     @media only screen and (min-width:1025px) {
       padding: 0px 50px !important;
     }
+    h1 {
+      @media only screen and (max-width:767px) {
+        text-align: center;
+      }
+    }
+    p {
+      @media only screen and (max-width:767px) {
+        text-align: center;
+      }
+      a {
+        @media only screen and (max-width:767px) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  .greenBox {
+    @media only screen and (max-width:640px) {
+      width: 100%;
+      text-align: center;
+    }
+    @media only screen and (min-width:641px) and (max-width:766px) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 15px;
+      max-width: 420px;
+      text-align: center;
+    }
+    }
   }
 }

@@ -85,6 +85,10 @@ ul[data-nasted-list] {
   list-style: none;
   padding: 0px;
   float: left;
+  @media only screen and (max-width:767px) {
+    float: none;
+    display: inline-block;
+  }
   li {
     float: left;
     background-color: rgba(250,250,250,0.3);
@@ -102,6 +106,9 @@ ul[data-nasted-list] {
         img {
           margin: 0px 3px;
         }
+      }
+      &:hover, &:focus {
+        text-decoration: none;
       }
     }
   }

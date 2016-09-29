@@ -125,6 +125,9 @@ div[rel='scrollcontent2'] {
   width: 100%;
   left: 0;
 }
+.overlay-div a:hover, .overlay-div a:focus {
+  color: #fff;
+}
 .scrollcontent2-content .img-set .gal-small-left {
   float: left;
   width: 49.8%;

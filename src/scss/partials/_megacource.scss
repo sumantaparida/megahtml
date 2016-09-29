@@ -64,16 +64,27 @@
   margin-top: 20px;
   [rating] {
     a {
-      font-size: 25px;
-      color: #ffc107;
-      &:hover, &:focus {
-        text-decoration: none;
-      }
-      .fa {
-        &:hover {
-          &::before {
-            content: '\f005';
+      &[star] {
+        font-size: 25px;
+        color: #ffc107;
+        &:hover, &:focus {
+          text-decoration: none;
+        }
+        .fa {
+          &:hover {
+            &::before {
+              content: '\f005';
+            }
           }
+        }
+      }
+      &[addComment] {
+        float: right;
+        padding: 5px 8px;
+        background-color: #383838;
+        color: #fff;
+        &:hover, &:focus {
+          text-decoration: none;
         }
       }
     }
@@ -82,6 +93,9 @@
     @media only screen and (max-width:768px) {
       margin-left: 20%;
     }
+  }
+  .example-text-input {
+    padding-top: 7px;
   }
   .form-control {
     @media only screen and (max-width:768px) {

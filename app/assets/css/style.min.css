@@ -3137,6 +3137,7 @@ input[type="search"] {
   .mega-contener h2 {
     font-size: 26px;
     margin-bottom: 0px;
+    margin-top: 0px;
   }
 }
 
@@ -3441,6 +3442,12 @@ ul[data-nasted-list] {
   padding: 0px;
   float: left;
 }
+@media only screen and (max-width: 767px) {
+  ul[data-nasted-list] {
+    float: none;
+    display: inline-block;
+  }
+}
 ul[data-nasted-list] li {
   float: left;
   background-color: rgba(250, 250, 250, 0.3);
@@ -3460,6 +3467,9 @@ ul[data-nasted-list] li a span {
 }
 ul[data-nasted-list] li a span img {
   margin: 0px 3px;
+}
+ul[data-nasted-list] li a:hover, ul[data-nasted-list] li a:focus {
+  text-decoration: none;
 }
 
 .tabContainer {
@@ -3696,6 +3706,10 @@ div[rel='scrollcontent2'] {
   left: 0;
 }
 
+.overlay-div a:hover, .overlay-div a:focus {
+  color: #fff;
+}
+
 .scrollcontent2-content .img-set .gal-small-left {
   float: left;
   width: 49.8%;
@@ -3786,12 +3800,19 @@ div[rel='scrollcontent2'] {
 
 .comment-section .title-set .left .comment-pic {
   float: left;
-  border: solid 2px #999;
   border-radius: 50%;
   overflow: hidden;
   width: 55px;
   height: 55px;
-  background-color: #dedede;
+}
+@media only screen and (max-width: 768px) {
+  .comment-section .title-set .left .comment-pic {
+    width: 45px;
+    height: 45px;
+  }
+}
+.comment-section .title-set .left .comment-pic img {
+  width: 100%;
 }
 
 .author-reting {
@@ -3916,12 +3937,6 @@ div[rel='scrollcontent2'] {
   background: #02ba1d;
   font-size: 21px;
   margin-top: 20px;
-}
-@media only screen and (min-width: 480px) and (max-width: 998px) {
-  .greenBox {
-    width: 100%;
-    text-align: center;
-  }
 }
 
 .navigation {
@@ -4817,17 +4832,17 @@ div[rel='scrollcontent2'] {
 }
 
 .increase {
-  width: 83px;
+  width: 97px;
   float: right;
 }
 .increase ul {
-  float: right;
+  float: left;
   width: 100%;
   list-style: none;
 }
 .increase ul li {
   float: left;
-  width: 25px;
+  width: auto;
   height: 18px;
   margin-left: 2px;
   text-align: center;
@@ -4848,6 +4863,11 @@ div[rel='scrollcontent2'] {
   font-size: 16px;
   font-weight: bold;
   line-height: 17px;
+}
+.increase ul li input[type="text"] {
+  width: 42px;
+  height: 18px;
+  text-align: center;
 }
 
 .acc_content {
@@ -4936,20 +4956,32 @@ div[rel='scrollcontent2'] {
 .commentFormsection {
   margin-top: 20px;
 }
-.commentFormsection [rating] a {
+.commentFormsection [rating] a[star] {
   font-size: 25px;
   color: #ffc107;
 }
-.commentFormsection [rating] a:hover, .commentFormsection [rating] a:focus {
+.commentFormsection [rating] a[star]:hover, .commentFormsection [rating] a[star]:focus {
   text-decoration: none;
 }
-.commentFormsection [rating] a .fa:hover::before {
+.commentFormsection [rating] a[star] .fa:hover::before {
   content: '\f005';
+}
+.commentFormsection [rating] a[addComment] {
+  float: right;
+  padding: 5px 8px;
+  background-color: #383838;
+  color: #fff;
+}
+.commentFormsection [rating] a[addComment]:hover, .commentFormsection [rating] a[addComment]:focus {
+  text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
   .commentFormsection .btn-primary {
     margin-left: 20%;
   }
+}
+.commentFormsection .example-text-input {
+  padding-top: 7px;
 }
 @media only screen and (max-width: 768px) {
   .commentFormsection .form-control {
@@ -5793,6 +5825,39 @@ div[rel='scrollcontent2'] {
     padding: 0px 50px !important;
   }
 }
+@media only screen and (max-width: 767px) {
+  .productPageContainer .bannerContent h1 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .productPageContainer .bannerContent p {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .productPageContainer .bannerContent p a {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .productPageContainer .bannerContent .greenBox {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 766px) {
+  .productPageContainer .bannerContent .greenBox {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 15px;
+    max-width: 420px;
+    text-align: center;
+  }
+}
 
 /*--Middle Body CSS--*/
 .mid-body {
@@ -6531,7 +6596,6 @@ h4[cat-headding] {
 [treepopup] > div:last-child > ul > li > ul li {
   width: 100%;
   float: left;
-  margin-bottom: 10px;
   position: relative;
 }
 [treepopup] > div:last-child > ul > li > ul li a {
@@ -6540,6 +6604,7 @@ h4[cat-headding] {
   color: #999;
   text-transform: uppercase;
   font-size: 14px;
+  padding: 2px 0px;
 }
 [treepopup] > div:last-child > ul > li > ul li a strong {
   color: #fff;
@@ -6549,6 +6614,7 @@ h4[cat-headding] {
 }
 [treepopup] > div:last-child > ul > li > ul li a:hover {
   text-decoration: underline;
+  background-color: #222629;
 }
 [treepopup] .treeclose {
   float: right;

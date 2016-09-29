@@ -189,15 +189,15 @@
   }
 }
 .increase {
-  width: 83px;
+  width: 97px;
   float: right;
   ul {
-    float: right;
+    float: left;
     width: 100%;
     list-style: none;
     li {
       float: left;
-      width: 25px;
+      width: auto;
       height: 18px;
       margin-left: 2px;
       text-align: center;
@@ -217,6 +217,11 @@
           font-weight: bold;
           line-height: 17px;
         }
+      }
+      input[type="text"] {
+        width: 42px;
+        height: 18px;
+        text-align: center;
       }
     }
   }
