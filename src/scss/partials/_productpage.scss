@@ -1,8 +1,5 @@
 .productPageContainer {
   .bannerContent {
-    @media only screen and (min-width:1025px) {
-      padding: 0px 50px !important;
-    }
     h1 {
       @media only screen and (max-width:767px) {
         text-align: center;

@@ -137,6 +137,11 @@
 	z-index: 8040;
 	visibility: hidden;
 }
+@media only screen and (max-width:768px) {
+	.fancybox-nav span {
+		visibility: visible;
+	}
+}
 
 .fancybox-prev span {
 	left: 10px;

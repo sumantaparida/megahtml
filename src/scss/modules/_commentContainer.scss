@@ -21,11 +21,11 @@
 }
 .comment-section .title-set .left .comment-pic {
   float: left;
-  //border: solid 2px #999;
   border-radius: 50%;
   overflow: hidden;
   width: 55px;
   height: 55px;
+  margin-right: 20px;
   @media only screen and (max-width:768px) {
     width: 45px;
     height: 45px;
@@ -75,15 +75,36 @@
   width: 100%;
   margin-top: 10px;
 }
-.comment-section .title-set .full p {
+.comment-section .title-set .full > p {
   font-size: 14px;
   color: #333333;
-  padding-left: 55px;
+  padding-left: 80px;
 }
-.comment-section .title-set .full p a {
+.comment-section .title-set .full > p > a {
   color: #428ccd;
 }
 //
+.replayComment {
+  padding-left: 80px;
+  margin-top: 0px !important;
+  .title-set {
+    border-top: solid 1px #dedede;
+    border-bottom: solid 1px #dedede;
+    padding: 15px 0px !important;
+  }
+}
+.reply {
+  float: right;
+  padding: 5px 8px;
+  background-color: #383838;
+  color: #fff !important;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+  .fa {
+    font-size: 12px;
+  }
+}
 .div-right {
   display: block;
   text-align: right;
