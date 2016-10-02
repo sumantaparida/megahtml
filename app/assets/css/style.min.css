@@ -1167,7 +1167,11 @@ span.info a {
   padding: 0;
   float: left;
   width: 100%;
-  min-height: 477px;
+}
+@media only screen and (min-width: 1025px) {
+  .megacursos .submenu-wrapper .nasted-nev ul[data-nasted-nav] {
+    min-height: 477px;
+  }
 }
 .megacursos .submenu-wrapper .nasted-nev ul[data-nasted-nav] > li {
   padding: 0;
@@ -2697,7 +2701,10 @@ input[type="search"] {
   height: auto;
   top: 0;
   position: relative;
-  overflow: hidden;
+}
+
+.flex-viewport {
+  overflow: inherit !important;
 }
 
 .banner-container .slider .flexslider .slides li {
@@ -2914,7 +2921,7 @@ input[type="search"] {
   list-style: none;
   padding: 0px;
   margin: 0px;
-  max-height: 150px;
+  max-height: 250px;
   overflow-y: auto;
   overflow-x: hidden;
   border-bottom: solid 2px #fdcd0b;
@@ -7035,6 +7042,10 @@ x-axis
   left: 0;
 }
 
+#mCSB_1_dragger_horizontal {
+  width: 80px !important;
+}
+
 .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
   width: 100%;
   height: 7px;
@@ -9379,6 +9390,82 @@ yx-axis
   }
 }
 
+.leftimg-content {
+  background-color: #fff;
+  padding: 30px 0px;
+}
+.leftimg-content .row {
+  margin-bottom: 30px;
+}
+.leftimg-content .left_img {
+  position: relative;
+}
+.leftimg-content .left_img .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+.leftimg-content .left_img .video a {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: #000;
+  border-radius: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 16px;
+}
+.leftimg-content .left_img .video a:hover, .leftimg-content .left_img .video a:focus {
+  text-decoration: none;
+}
+.leftimg-content .left_img .video:hover a {
+  background-color: #1b84f7;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+.leftimg-content .left_img img {
+  width: 100%;
+}
+
+.right_content .logo_clint {
+  float: left;
+  width: 150px;
+}
+.right_content .logo_clint img {
+  width: 100%;
+  vertical-align: top;
+}
+.right_content h3 {
+  font-size: 21px;
+  position: relative;
+  padding-left: 20px;
+  font-weight: 300;
+}
+.right_content h3::before {
+  content: '\2014';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.right_content p {
+  position: relative;
+  color: rgba(0, 0, 0, 0.48);
+  border-left: solid 4px #E8E8E8;
+  padding-left: 15px;
+}
+
 /*--Middle Body CSS--*/
 .mid-body {
   display: block;
@@ -10188,6 +10275,10 @@ h4[cat-headding] {
 }
 [treepopup] [tree-data="true"] {
   display: block;
+}
+[treepopup] .godofuniverse {
+  cursor: pointer;
+  position: relative;
 }
 
 [tree-overlay], [extra-overlay] {

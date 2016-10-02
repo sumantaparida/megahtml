@@ -1096,7 +1096,9 @@ span.info {
         padding: 0;
         float: left;
         width: 100%;
-        min-height: 477px;
+        @media only screen and (min-width:1025px) {
+          min-height: 477px;
+        }
         > li {
           padding: 0;
           float: left;

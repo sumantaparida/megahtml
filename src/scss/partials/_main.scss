@@ -11,6 +11,7 @@
 @import '../partials/_megacource.scss';
 @import '../partials/_freelession.scss';
 @import '_productpage.scss';
+@import '../modules/_leftimg-content.scss';
 /*--Middle Body CSS--*/
 .mid-body {
   display: block;
@@ -806,6 +807,11 @@ h4[cat-headding] {
   //
   [tree-data="true"] {
     display: block;
+  }
+  //
+  .godofuniverse {
+    cursor: pointer;
+    position: relative;;
   }
 }
 //
