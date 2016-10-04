@@ -3635,7 +3635,7 @@ div[rel='scrollcontent2'] {
 
 /* Basic CSS for the elements - If rel is "scrollcontent2", style its scrollbar by referring to ".scrollcontent2-content", ".scrollcontent2-bar", etc. */
 .scrollcontent2-content {
-  width: 3800px;
+  width: 3625px;
   padding-top: 30px;
   height: 416px !important;
 }
@@ -8791,6 +8791,18 @@ yx-axis
   white-space: nowrap;
   text-align: center;
 }
+@media only screen and (min-width: 1025px) {
+  .contenido_container.one-row h4 {
+    line-height: 28pt;
+    font-size: 18pt;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .contenido_container.one-row h4 {
+    line-height: 28pt;
+    font-size: 13pt;
+  }
+}
 
 .gallery_container {
   padding: 15px 0px;
@@ -8921,7 +8933,7 @@ yx-axis
 }
 .tesimonialWrapper .testimonials .owl-item .item .clintLogo img {
   width: auto;
-  border-radius: 0px;
+  border-radius: 50px;
 }
 .tesimonialWrapper .testimonials .owl-item .item p {
   color: #3f3f3f;
@@ -8963,6 +8975,7 @@ yx-axis
   margin: 0px;
   padding: 0px;
   float: left;
+  text-align: center;
 }
 [data-clint-logo] li {
   display: inline-block;
@@ -9218,6 +9231,7 @@ yx-axis
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 9;
 }
 .videowrapper [videooverlay] .lockVideo {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0667ea+0,06bbea+100 */
@@ -9356,6 +9370,11 @@ yx-axis
   font-weight: 400;
 }
 
+.freelession_gallery .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  width: 90% !important;
+  margin: auto;
+}
+
 @media only screen and (max-width: 767px) {
   .productPageContainer .bannerContent h1 {
     text-align: center;
@@ -9466,6 +9485,30 @@ yx-axis
   padding-left: 15px;
 }
 
+.black {
+  background: #000;
+}
+
+.green {
+  background: green;
+}
+
+.white {
+  background: #fff;
+}
+
+.red {
+  background: #f00;
+}
+
+.gray {
+  background: #dedede;
+}
+
+.radus50 {
+  border-radius: 50px !important;
+}
+
 /*--Middle Body CSS--*/
 .mid-body {
   display: block;
@@ -9517,6 +9560,7 @@ yx-axis
   float: left;
   width: 100%;
   position: relative;
+  background-color: #000;
 }
 @media only screen and (max-width: 1024px) {
   .mega-courses > ul {

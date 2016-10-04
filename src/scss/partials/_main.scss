@@ -12,6 +12,25 @@
 @import '../partials/_freelession.scss';
 @import '_productpage.scss';
 @import '../modules/_leftimg-content.scss';
+// unick class
+.black {
+  background: #000;
+}
+.green {
+  background: green;
+}
+.white {
+  background: #fff;
+}
+.red {
+  background: #f00;
+}
+.gray {
+  background: #dedede;
+}
+.radus50 {
+  border-radius: 50px !important;
+}
 /*--Middle Body CSS--*/
 .mid-body {
   display: block;
@@ -56,6 +75,7 @@
   float: left;
   width: 100%;
   position: relative;
+  background-color: #000;
   @media only screen and (max-width:1024px) {
     margin: 0px;
   }
