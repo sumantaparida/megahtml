@@ -10335,6 +10335,39 @@ h4[cat-headding] {
   z-index: 499;
 }
 
+.caseStudy .block-box {
+  margin-bottom: 15px;
+}
+.caseStudy .block_figure img {
+  width: auto;
+  height: 80px;
+}
+.caseStudy .block_content p {
+  margin-top: 10px;
+  line-height: 25px;
+  font-size: 15px;
+}
+@media only screen and (min-width: 1025px) {
+  .caseStudy .block_content p {
+    padding-right: 15px;
+  }
+}
+.caseStudy .block_content p a {
+  position: relative;
+  margin-top: 15px;
+}
+.caseStudy .block_content p a::after {
+  content: '\203A';
+  position: absolute;
+  right: -15px;
+  top: 0px;
+  font-size: 15px;
+}
+.caseStudy .block_content p a:hover {
+  text-decoration: none;
+  color: #4098f8;
+}
+
 .login_container .allmegacoursesBanner {
   height: 100px;
 }

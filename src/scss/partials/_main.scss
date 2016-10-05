@@ -844,3 +844,40 @@ h4[cat-headding] {
   left: 0;
   z-index: 499;
 }
+// Clients Page
+.caseStudy {
+  .block-box {
+    margin-bottom: 15px;
+  }
+  .block_figure {
+    img {
+      width: auto;
+      height: 80px;
+    }
+  }
+  .block_content {
+    p {
+      margin-top: 10px;
+      line-height: 25px;
+      font-size: 15px;
+      @media only screen and (min-width:1025px) {
+        padding-right: 15px;
+      }
+      a {
+        position: relative;
+        margin-top: 15px;
+        &::after {
+          content: '\203A';
+          position: absolute;
+          right: -15px;
+          top: 0px;
+          font-size: 15px;
+        }
+        &:hover {
+          text-decoration: none;
+          color: #4098f8;
+        }
+      }
+    }
+  }
+}
