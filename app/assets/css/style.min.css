@@ -10335,6 +10335,22 @@ h4[cat-headding] {
   z-index: 499;
 }
 
+.clientBanner {
+  height: 700px;
+  background-image: url("../images/freelession-banner.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 767px) {
+  .clientBanner {
+    height: 550px !important;
+  }
+}
+.clientBanner .sub-links {
+  margin-bottom: 10px;
+}
+
 .caseStudy .block-box {
   margin-bottom: 15px;
 }
