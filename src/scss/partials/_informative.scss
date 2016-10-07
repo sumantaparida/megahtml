@@ -1,0 +1,41 @@
+.informative {
+  .informativeBanner {
+    height: 500px;
+    background-image: url(../images/freelession-banner.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .informative_banner_content {
+      h1 {
+        text-align: left;
+        font-weight: normal;
+      }
+      p {
+        font-size: 22px;
+        color: #c7c5c5;
+      }
+    }
+  }
+}
+.img-grid-with-content {
+  padding: 30px 15px !important;
+  h2 {
+    text-align: center;
+  }
+}
+.article-2 {
+  padding: 80px 0px;
+  background: #f1e5ee;
+  background: -webkit-linear-gradient(-45deg, #f1e5ee 0%, #e6eef1 100%);
+  background: -webkit-linear-gradient(315deg, #f1e5ee 0%, #e6eef1 100%);
+  background: linear-gradient(135deg, #f1e5ee 0%, #e6eef1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e5ee', endColorstr='#e6eef1',GradientType=1 );
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    a {
+      text-decoration: underline;
+      color: #00a8ff;
+    }
+  }
+}

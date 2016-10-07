@@ -9485,6 +9485,46 @@ yx-axis
   padding-left: 15px;
 }
 
+.informative .informativeBanner {
+  height: 500px;
+  background-image: url(../images/freelession-banner.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.informative .informativeBanner .informative_banner_content h1 {
+  text-align: left;
+  font-weight: normal;
+}
+.informative .informativeBanner .informative_banner_content p {
+  font-size: 22px;
+  color: #c7c5c5;
+}
+
+.img-grid-with-content {
+  padding: 30px 15px !important;
+}
+.img-grid-with-content h2 {
+  text-align: center;
+}
+
+.article-2 {
+  padding: 80px 0px;
+  background: #f1e5ee;
+  background: -webkit-linear-gradient(-45deg, #f1e5ee 0%, #e6eef1 100%);
+  background: -webkit-linear-gradient(315deg, #f1e5ee 0%, #e6eef1 100%);
+  background: linear-gradient(135deg, #f1e5ee 0%, #e6eef1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e5ee', endColorstr='#e6eef1',GradientType=1 );
+}
+.article-2 p {
+  font-size: 18px;
+  line-height: 28px;
+}
+.article-2 p a {
+  text-decoration: underline;
+  color: #00a8ff;
+}
+
 .black {
   background: #000;
 }
@@ -19869,4 +19909,14 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+.row-centered {
+  text-align: center;
+}
+
+.col-centered {
+  display: inline-block;
+  float: none;
+  text-align: left;
+  margin-right: -4px;
 }
