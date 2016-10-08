@@ -9500,12 +9500,23 @@ yx-axis
   font-size: 22px;
   color: #c7c5c5;
 }
+.informative .gallery_container {
+  background-color: #fff;
+  padding: 0px;
+}
+.informative .gallery_container .mCSB_horizontal.mCSB_inside .mCSB_container {
+  margin-bottom: 0px;
+}
 
 .img-grid-with-content {
   padding: 30px 15px !important;
 }
 .img-grid-with-content h2 {
   text-align: center;
+  color: #2f637b;
+}
+.img-grid-with-content h4, .img-grid-with-content p {
+  color: #2f637b;
 }
 
 .article-2 {
@@ -9516,13 +9527,153 @@ yx-axis
   background: linear-gradient(135deg, #f1e5ee 0%, #e6eef1 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e5ee', endColorstr='#e6eef1',GradientType=1 );
 }
+.article-2 h3, .article-2 h2 {
+  color: #2f637b;
+}
 .article-2 p {
   font-size: 18px;
   line-height: 28px;
+  color: #2f637b;
 }
 .article-2 p a {
   text-decoration: underline;
   color: #00a8ff;
+}
+
+.article-3 {
+  padding: 80px 0px;
+  background: #fff;
+}
+.article-3 h2, .article-3 h4, .article-3 p {
+  color: #2f637b;
+}
+.article-3 h4 {
+  font-weight: bold;
+}
+
+.article-4 {
+  padding: 30px 0px;
+  background: #cf79b8;
+  background: -webkit-linear-gradient(-45deg, #cf79b8 0%, #c8b1df 100%);
+  background: -webkit-linear-gradient(315deg, #cf79b8 0%, #c8b1df 100%);
+  background: linear-gradient(135deg, #cf79b8 0%, #c8b1df 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf79b8', endColorstr='#c8b1df',GradientType=1 );
+}
+.article-4 h3 {
+  color: #fff;
+  text-align: center;
+  margin: 0px;
+  line-height: 40px;
+  font-weight: normal;
+}
+.article-4 .button {
+  background-color: #fff;
+  border-radius: 2px;
+  color: #a682ca;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: normal;
+  display: inline-block;
+  margin: auto;
+}
+.article-4 .button:hover {
+  text-decoration: none;
+}
+
+.article-5 {
+  background-color: #fff;
+}
+
+.extraProgram {
+  padding: 80px 0px;
+  background: #63c57a;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #63c57a 0%, #9dd86a 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(315deg, #63c57a 0%, #9dd86a 100%);
+  background: linear-gradient(135deg, #63c57a 0%, #9dd86a 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63c57a', endColorstr='#9dd86a',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+.extraProgram .extraProgramLeft h2 {
+  color: #fff;
+  margin: 0px 0px 20px 0px;
+}
+.extraProgram .extraProgramLeft h2 span {
+  display: block;
+}
+.extraProgram .extraProgramLeft h2 span.caps {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+.extraProgram .extraProgramLeft h2 span.bold {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.extraProgram .extraProgramLeft h2 span.esmall {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+.extraProgram .extraProgramLeft .addToButton a {
+  width: 50%;
+  float: left;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+.extraProgram .extraProgramLeft .addToButton a:hover, .extraProgram .extraProgramLeft .addToButton a:focus {
+  text-decoration: none;
+}
+.extraProgram .extraProgramLeft .addToButton a:first-child {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  padding: 10px;
+}
+.extraProgram .extraProgramLeft .addToButton a:first-child sup {
+  font-size: 11px;
+}
+.extraProgram .extraProgramLeft .addToButton a:first-child sub {
+  font-size: 11px;
+  margin-left: 5px;
+}
+.extraProgram .extraProgramLeft .addToButton a:last-child {
+  background-color: #524a7b;
+  color: #fff;
+  padding: 10px;
+}
+.extraProgram .extraProgramLeft .addToButton a:last-child .fa {
+  margin-left: 5px;
+}
+.extraProgram .extraProgramRight .circle {
+  width: 120px;
+  height: 120px;
+  float: left;
+  overflow: hidden;
+  border-radius: 100px;
+  background-color: #fe7129;
+}
+@media only screen and (min-width: 1025px) {
+  .extraProgram .extraProgramRight .circle {
+    margin-left: 15%;
+    margin-top: 8px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .extraProgram .extraProgramRight .circle {
+    float: none;
+    margin: 20px auto auto auto;
+  }
+}
+.extraProgram .extraProgramRight .circle img {
+  width: 100%;
 }
 
 .black {
@@ -19919,4 +20070,5 @@ button.close {
   float: none;
   text-align: left;
   margin-right: -4px;
+  margin-bottom: 15px;
 }

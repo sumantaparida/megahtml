@@ -16,11 +16,24 @@
       }
     }
   }
+  .gallery_container {
+    background-color: #fff;
+    padding: 0px;
+    .mCSB_horizontal.mCSB_inside {
+      .mCSB_container {
+        margin-bottom: 0px;
+      }
+    }
+  }
 }
 .img-grid-with-content {
   padding: 30px 15px !important;
   h2 {
     text-align: center;
+    color: #2f637b;
+  }
+  h4, p {
+    color: #2f637b;
   }
 }
 .article-2 {
@@ -30,12 +43,148 @@
   background: -webkit-linear-gradient(315deg, #f1e5ee 0%, #e6eef1 100%);
   background: linear-gradient(135deg, #f1e5ee 0%, #e6eef1 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e5ee', endColorstr='#e6eef1',GradientType=1 );
+  h3, h2 {
+    color: #2f637b;
+  }
   p {
     font-size: 18px;
     line-height: 28px;
+    color: #2f637b;
     a {
       text-decoration: underline;
       color: #00a8ff;
+    }
+  }
+}
+// article-3
+.article-3 {
+  padding: 80px 0px;
+  background: #fff;
+  h2, h4, p {
+    color: #2f637b;
+  }
+  h4 {
+    font-weight: bold;
+  }
+}
+.article-4 {
+  padding: 30px 0px;
+  background: #cf79b8;
+  background: -moz-linear-gradient(-45deg,  #cf79b8 0%, #c8b1df 100%);
+  background: -webkit-linear-gradient(-45deg,  #cf79b8 0%,#c8b1df 100%);
+  background: linear-gradient(135deg,  #cf79b8 0%,#c8b1df 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf79b8', endColorstr='#c8b1df',GradientType=1 );
+  h3 {
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+    line-height: 40px;
+    font-weight: normal;
+  }
+  .button {
+    background-color: #fff;
+    border-radius: 2px;
+    color: #a682ca;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: normal;
+    display: inline-block;
+    margin: auto;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+// Article 5
+.article-5 {
+  background-color: #fff;
+}
+// extraProgram
+.extraProgram {
+  padding: 80px 0px;
+  background: #63c57a; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #63c57a 0%, #9dd86a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #63c57a 0%,#9dd86a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #63c57a 0%,#9dd86a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63c57a', endColorstr='#9dd86a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  .extraProgramLeft {
+    h2 {
+      color: #fff;
+      margin: 0px 0px 20px 0px;
+      span {
+        display: block;
+        &.caps {
+          text-transform: uppercase;
+          font-weight: normal;
+          font-size: 18px;
+          letter-spacing: 0.5px;
+        }
+        &.bold {
+          font-weight: bold;
+          letter-spacing: 0.5px;
+        }
+        &.esmall {
+          font-style: italic;
+          font-weight: 300;
+          font-size: 16px;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+    .addToButton {
+      a {
+        width: 50%;
+        float: left;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        &:hover, &:focus {
+          text-decoration: none;
+        }
+        &:first-child {
+          background-color: #fff;
+          color: #000;
+          font-weight: bold;
+          padding: 10px;
+          sup {
+            font-size: 11px;
+          }
+          sub {
+            font-size: 11px;
+            margin-left: 5px;
+          }
+        }
+        &:last-child {
+          background-color: #524a7b;
+          color: #fff;
+          padding: 10px;
+          .fa {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  .extraProgramRight {
+    .circle {
+      width: 120px;
+      height: 120px;
+      float: left;
+      overflow: hidden;
+      border-radius: 100px;
+      background-color: #fe7129;
+      @media only screen and (min-width:1025px) {
+        margin-left: 15%;
+        margin-top: 8px;
+      }
+      @media only screen and (max-width:1024px) {
+        float: none;
+        margin: 20px auto auto auto;
+      }
+      img {
+        width: 100%;
+      }
     }
   }
 }
