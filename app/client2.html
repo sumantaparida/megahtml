@@ -2102,7 +2102,7 @@
   <!-- // Middle content Start -->
   <div class="container-fluid nopadding">
     <!-- // Banner Start -->
-    <div class="col-xs-12 nopadding freelessionBanner">
+    <div class="col-xs-12 nopadding clientBanner">
       <div class="sub-links clearfix">
         <ul>
           <li>Free Lessons</li>
@@ -2120,11 +2120,11 @@
     <!-- // left image and content Start -->
     <div class="col-xs-12 leftimg-content">
       <div class="container">
-        <div class="row">
+        <div class="row"  style="padding-top:75px;">
           <div class="col-xs-12 col-sm-6 left_img">
             <div class="col-xs-12 nopadding">
               <div class="video">
-                <a href="javascript:void(0)">PLAY</a>
+                <a class="fancybox-media" href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1">PLAY</a>
               </div>
               <img src="https://www.braintreepayments.com/images/boxed-cover-708edc26.jpg" alt="">
             </div>
@@ -2141,11 +2141,11 @@
           </div>
         </div>
         <!-- // -->
-        <div class="row">
+        <div class="row"  style="padding-top:75px;">
           <div class="col-xs-12 col-sm-6 left_img pull-right">
             <div class="col-xs-12 nopadding">
               <div class="video">
-                <a href="javascript:void(0)">PLAY</a>
+                <a class="fancybox-media" href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1">PLAY</a>
               </div>
               <img src="https://www.braintreepayments.com/images/boxed-cover-708edc26.jpg" alt="">
             </div>
@@ -2162,11 +2162,11 @@
           </div>
         </div>
         <!-- // -->
-        <div class="row">
+        <div class="row"  style="padding-top:75px;padding-bottom:75px;">
           <div class="col-xs-12 col-sm-6 left_img">
             <div class="col-xs-12 nopadding">
               <div class="video">
-                <a href="javascript:void(0)">PLAY</a>
+                <a class="fancybox-media" href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1">PLAY</a>
               </div>
               <img src="https://www.braintreepayments.com/images/boxed-cover-708edc26.jpg" alt="">
             </div>
@@ -2182,7 +2182,7 @@
             </div>
           </div>
         </div>
-        <!-- // -->
+        <!-- // --><p>&nbsp;</p>
         <hr>
         <div class="row">
           <div class="col-xs-12 col-sm-4">
@@ -2190,7 +2190,7 @@
               <div class="col-xs-12 left_img">
                 <div class="col-xs-12 nopadding">
                   <div class="video">
-                    <a href="javascript:void(0)">PLAY</a>
+                    <a class="fancybox-media" href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1">PLAY</a>
                   </div>
                   <img src="https://www.braintreepayments.com/images/boxed-cover-708edc26.jpg" alt="">
                 </div>
@@ -2212,7 +2212,7 @@
               <div class="col-xs-12 left_img">
                 <div class="col-xs-12 nopadding">
                   <div class="video">
-                    <a href="javascript:void(0)">PLAY</a>
+                    <a class="fancybox-media" href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1">PLAY</a>
                   </div>
                   <img src="https://www.braintreepayments.com/images/boxed-cover-708edc26.jpg" alt="">
                 </div>
@@ -2234,7 +2234,7 @@
               <div class="col-xs-12 left_img">
                 <div class="col-xs-12 nopadding">
                   <div class="video">
-                    <a href="javascript:void(0)">PLAY</a>
+                    <a class="fancybox-media" href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1">PLAY</a>
                   </div>
                   <img src="https://www.braintreepayments.com/images/boxed-cover-708edc26.jpg" alt="">
                 </div>
@@ -2626,37 +2626,42 @@
   <script>
     window.jQuery || document.write('<script src="assets/components/jquery.js"><\/script>');
   </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
   <!-- FlexSlider -->
   <script defer src="assets/js/jquery.flexslider.js"></script>
-  <script defer src="assets/js/jquery.fancybox.pack.js"></script>
+  <!-- Add fancyBox main JS and CSS files -->
+  <script type="text/javascript" src="assets/js/source/jquery.fancybox.js?v=2.1.5"></script>
+  <link rel="stylesheet" type="text/css" href="assets/js/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+  <!-- // -->
   <script src="assets/js/easyResponsiveTabs.js"></script>
   <script type="text/javascript" src="assets/js/smk-accordion.js"></script>
   <script type="text/javascript" src="assets/js/jquery.mousewheel.min.js"></script>
-  <script type="text/javascript" src="assets/js/slickcustomscroll.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="assets/js/scripts.min.js"></script>
   <script type="text/javascript">
     $(function() {
-      $(".accordion_example2").smk_Accordion({
-        closeAble: true, //boolean
-      });
-      //
-      $("div[rel='scrollcontent2']").customscroll({
-        direction: "horizontal",
-        bounce: 0
-      });
-      // Tab script
-      $("ul[data-tab] > li > a").on("click", function(tabhash){
-        tabhash.preventDefault();
-        var href = $(this).attr("href");
-        $(".tabDataContainer").hide();
-        $("ul[data-tab] > li > a").removeClass("active");
-        $(this).addClass("active");
+      $('.fancybox').fancybox();
+      $(".fancybox-media").click(function() {
+    		$.fancybox({
+    			'padding'		: 0,
+    			'autoScale'		: false,
+    			'transitionIn'	: 'none',
+    			'transitionOut'	: 'none',
+    			'title'			: this.title,
+    			'width'			: 640,
+    			'height'		: 385,
+    			'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+    			'type'			: 'swf',
+    			'swf'			: {
+    			'wmode'				: 'transparent',
+    			'allowfullscreen'	: 'true'
+    			}
+    		});
 
-        $(href).fadeIn(300);
-        ///alert($(this).attr("href"));
-      });
+    		return false;
+    	});
       //
       $('body').on('click', '#refreshclient', function (){
     		$.post( "http://ec2-52-87-229-103.compute-1.amazonaws.com/megacursos/getclients", { curpage: $("#curpage").val() })

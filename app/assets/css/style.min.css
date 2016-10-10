@@ -1380,6 +1380,7 @@ span.info a {
 .megacursos .submenu-wrapper .nav-data .book-data .book-data-left > ul > li {
   display: inline-block;
   margin-right: 5px;
+  min-width: 60px;
 }
 .megacursos .submenu-wrapper .nav-data .book-data .book-data-left > ul > li a {
   background: #fff;
@@ -1387,8 +1388,9 @@ span.info a {
   color: #000;
   display: block;
   float: left;
-  padding: 2px 4px 5px 0;
+  padding: 2px 4px 5px 4px;
   height: 25px;
+  width: 100%;
 }
 .megacursos .submenu-wrapper .nav-data .book-data .book-data-left > ul > li a span {
   float: left;
@@ -1398,7 +1400,7 @@ span.info a {
   margin-top: -3px;
 }
 .megacursos .submenu-wrapper .nav-data .book-data .book-data-left > ul li:nth-of-type(2) a {
-  padding: 2px 6px;
+  padding: 2px 4px 5px 4px;
 }
 .megacursos .submenu-wrapper .nav-data .book-data .book-data-left > ul li:nth-of-type(3) a {
   background: #fffda6;
@@ -3001,6 +3003,74 @@ input[type="search"] {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .additionalBanner .additionalBannerLeft {
+    margin-top: 80px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .additionalBanner .additionalBannerLeft {
+    margin-top: 120px;
+  }
+}
+.additionalBanner .additionalBannerLeft p.nuevo {
+  margin-bottom: 0px;
+  color: #fdcd0b;
+  font-weight: bold;
+}
+.additionalBanner .additionalBannerLeft p.addtionalPara {
+  margin: 0px 0px 20px 0px;
+  line-height: 25px;
+  color: #d4d4d4;
+}
+.additionalBanner .additionalBannerLeft h1 {
+  margin-top: 0px;
+  font-weight: bold;
+}
+.additionalBanner .additionalBannerLeft .verButton {
+  border-radius: 0px;
+  border: solid 2px #fdcd0b;
+  color: #fff;
+  background-color: rgba(253, 205, 6, 0.56);
+  padding: 10px 30px;
+}
+
+.additionalBannerRight .bannerVideoBox {
+  width: 415px;
+  margin-top: 95px;
+  position: relative;
+}
+@media only screen and (max-width: 640px) {
+  .additionalBannerRight .bannerVideoBox {
+    width: 100%;
+    margin-top: 35px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .additionalBannerRight .bannerVideoBox img {
+    width: 100%;
+  }
+}
+.additionalBannerRight .bannerVideoBox .imgOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.additionalBannerRight .bannerVideoBox .imgOverlay img {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
 .sub-links {
   display: block;
   text-align: left;
@@ -3580,6 +3650,31 @@ ul[data-nasted-list] li a:hover, ul[data-nasted-list] li a:focus {
 }
 .tabDataContainer .dataBox > div [data-download]:hover {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 1025px) {
+  .megacoursesVerticalTab .tabDataContainer {
+    padding: 0px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .megacoursesVerticalTab .tabDataContainer .tabImg {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+.megacoursesVerticalTab .tabDataContainer h3 {
+  margin: 0px 0px 20px 0px;
+  font-weight: bold;
+  color: #696969;
+}
+@media only screen and (max-width: 768px) {
+  .megacoursesVerticalTab .tabDataContainer h3 {
+    text-align: center;
+  }
+}
+.megacoursesVerticalTab .tabDataContainer p .p-spacing {
+  margin-right: 15px;
 }
 
 .gallery-wrap {
@@ -8537,6 +8632,15 @@ yx-axis
     text-align: center;
   }
 }
+.packShort img {
+  width: 70%;
+}
+@media only screen and (min-width: 1025px) {
+  .packShort img {
+    width: 260px;
+    margin-right: 20px;
+  }
+}
 
 .freelessionBanner {
   height: 700px;
@@ -8758,6 +8862,11 @@ yx-axis
     font-size: 18pt;
   }
 }
+@media only screen and (max-width: 766px) {
+  .contenido_container h4 {
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
   .contenido_container h4 {
     line-height: 72pt;
@@ -8790,6 +8899,11 @@ yx-axis
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: center;
+}
+@media only screen and (max-width: 766px) {
+  .contenido_container .contenido_grid > div .c_grid_data .data-img {
+    width: 35px;
+  }
 }
 @media only screen and (min-width: 1025px) {
   .contenido_container.one-row h4 {
@@ -9038,6 +9152,11 @@ yx-axis
 .tranquilidadWrapper .tranquilidad > div p {
   font-size: 20px;
   float: left;
+}
+@media only screen and (max-width: 768px) {
+  .tranquilidadWrapper .tranquilidad > div p {
+    font-size: 16px;
+  }
 }
 .tranquilidadWrapper .tranquilidad > div p img {
   float: left;
@@ -9486,7 +9605,7 @@ yx-axis
 }
 
 .informative .informativeBanner {
-  height: 500px;
+  height: 700px;
   background-image: url(../images/freelession-banner.jpg);
   background-position: top center;
   background-repeat: no-repeat;
@@ -9499,6 +9618,9 @@ yx-axis
 .informative .informativeBanner .informative_banner_content p {
   font-size: 22px;
   color: #c7c5c5;
+}
+.informative .informativeBanner .additionalBannerLeft {
+  margin-top: 55px;
 }
 .informative .gallery_container {
   background-color: #fff;
@@ -9517,6 +9639,9 @@ yx-axis
 }
 .img-grid-with-content h4, .img-grid-with-content p {
   color: #2f637b;
+}
+.img-grid-with-content .img-responsive {
+  margin: auto;
 }
 
 .article-2 {
@@ -9627,6 +9752,11 @@ yx-axis
   display: block;
   text-align: center;
   font-size: 18px;
+}
+@media only screen and (max-width: 400px) {
+  .extraProgram .extraProgramLeft .addToButton a {
+    font-size: 13px;
+  }
 }
 .extraProgram .extraProgramLeft .addToButton a:hover, .extraProgram .extraProgramLeft .addToButton a:focus {
   text-decoration: none;

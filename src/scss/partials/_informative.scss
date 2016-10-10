@@ -1,6 +1,6 @@
 .informative {
   .informativeBanner {
-    height: 500px;
+    height: 700px;
     background-image: url(../images/freelession-banner.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -14,6 +14,9 @@
         font-size: 22px;
         color: #c7c5c5;
       }
+    }
+    .additionalBannerLeft {
+      margin-top: 55px
     }
   }
   .gallery_container {
@@ -34,6 +37,9 @@
   }
   h4, p {
     color: #2f637b;
+  }
+  .img-responsive {
+    margin: auto;
   }
 }
 .article-2 {
@@ -139,6 +145,9 @@
         display: block;
         text-align: center;
         font-size: 18px;
+        @media only screen and (max-width:400px) {
+          font-size: 13px;
+        }
         &:hover, &:focus {
           text-decoration: none;
         }

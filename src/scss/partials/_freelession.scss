@@ -3,6 +3,13 @@
     display: block;
     text-align: center;
   }
+  img {
+    width: 70%;
+    @media only screen and (min-width:1025px) {
+      width: 260px;
+      margin-right: 20px;
+    }
+  }
 }
 .freelessionBanner {
   height: 700px;
@@ -204,6 +211,9 @@
       line-height: 72pt;
       font-size: 18pt;
     }
+    @media only screen and (max-width:766px) {
+      text-align: center;
+    }
     @media only screen and (min-width:767px) and (max-width:1024px) {
       line-height: 72pt;
       font-size: 13pt;
@@ -230,6 +240,11 @@
           text-overflow: ellipsis;
           white-space: nowrap;
           text-align: center;
+        }
+        .data-img {
+          @media only screen and (max-width:766px) {
+            width: 35px;
+          }
         }
       }
     }
@@ -447,6 +462,9 @@
       p {
         font-size: 20px;
         float: left;
+        @media only screen and (max-width:768px) {
+          font-size: 16px;
+        }
         img {
           float: left;
           margin-right: 15px;
