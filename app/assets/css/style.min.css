@@ -3673,8 +3673,127 @@ ul[data-nasted-list] li a:hover, ul[data-nasted-list] li a:focus {
     text-align: center;
   }
 }
+.megacoursesVerticalTab .tabDataContainer p {
+  font-size: 16px;
+}
 .megacoursesVerticalTab .tabDataContainer p .p-spacing {
   margin-right: 15px;
+}
+.megacoursesVerticalTab .tabDataContainer .block {
+  display: block;
+}
+.megacoursesVerticalTab .studentData .studentDataBox {
+  background-color: #999;
+  min-height: 200px;
+  padding: 0px;
+}
+.megacoursesVerticalTab .studentData .DataBoxContent {
+  padding: 5px 0px;
+}
+.megacoursesVerticalTab .studentData .DataBoxContent p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 1025px) {
+  #Delivery .tabImg {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #Payment .tabImg {
+    text-align: right;
+    margin-bottom: 30px;
+  }
+}
+
+.addonextra {
+  margin-top: 25px;
+}
+.addonextra a {
+  display: block;
+  border: solid 2px #01cb67;
+  color: #01cb67;
+  text-align: center;
+  padding: 12px 30px;
+  max-width: 600px;
+  width: 100%;
+  font-weight: bold;
+}
+.addonextra a:hover {
+  text-decoration: none;
+}
+
+.sendyourmail {
+  margin-top: 10px;
+  max-width: 630px;
+}
+.sendyourmail input[type="text"] {
+  width: 100%;
+  float: left;
+  border: solid 2px #b3b3b3 !important;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 1025px) {
+  .sendyourmail input[type="text"] {
+    width: 390px;
+  }
+}
+
+.send-button {
+  width: 100%;
+  float: right;
+  font-weight: normal !important;
+  text-transform: uppercase;
+  border: solid 2px #b3b3b3 !important;
+  border-radius: 0px !important;
+  background-color: #fff;
+  color: #b3b3b3 !important;
+  padding: 12px !important;
+}
+@media only screen and (min-width: 1025px) {
+  .send-button {
+    width: 200px;
+  }
+}
+.send-button:hover {
+  color: #b3b3b3 !important;
+}
+
+#BusinessProposal label {
+  font-weight: normal;
+}
+#BusinessProposal input[type="text"] {
+  border-radius: 0px !important;
+  border: solid 1px darkgray;
+  width: 100%;
+}
+@media only screen and (min-width: 1025px) {
+  #BusinessProposal input[type="text"] {
+    width: 395px;
+  }
+}
+#BusinessProposal .select {
+  border: solid 1px darkgray;
+  padding: 5px;
+  width: 100%;
+}
+@media only screen and (min-width: 1025px) {
+  #BusinessProposal .select {
+    width: 395px;
+  }
+}
+#BusinessProposal .massegebox {
+  min-height: 80px;
+  width: 100%;
+}
+@media only screen and (min-width: 1025px) {
+  #BusinessProposal .massegebox {
+    width: 395px;
+  }
 }
 
 .gallery-wrap {
