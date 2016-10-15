@@ -3232,7 +3232,7 @@ input[type="search"] {
 }
 
 .mega-contener h4 {
-  font-size: 26px;
+  font-size: 23px;
   color: #FFFFFF;
   font-weight: normal;
   font-style: italic;
@@ -3765,6 +3765,9 @@ ul[data-nasted-list] li a:hover, ul[data-nasted-list] li a:focus {
 
 #BusinessProposal label {
   font-weight: normal;
+}
+#BusinessProposal .form-horizontal input[type="text"] {
+  padding-top: 5px;
 }
 #BusinessProposal input[type="text"] {
   border-radius: 0px !important;
@@ -4907,7 +4910,7 @@ div[rel='scrollcontent2'] {
   transform: rotate(-90deg);
 }
 
-.extraContainer {
+.extraContainer, .syllabusContainer {
   max-width: 800px;
   width: 100%;
   height: 85%;
@@ -4931,11 +4934,11 @@ div[rel='scrollcontent2'] {
   display: none;
 }
 @media only screen and (max-width: 768px) {
-  .extraContainer {
+  .extraContainer, .syllabusContainer {
     height: 100%;
   }
 }
-.extraContainer .popHeadding {
+.extraContainer .popHeadding, .syllabusContainer .popHeadding {
   float: left;
   width: 100%;
   padding: 10px 15px 10px 30px;
@@ -4953,16 +4956,16 @@ div[rel='scrollcontent2'] {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe8fd', endColorstr='#edddf8',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-.extraContainer .popHeadding span {
+.extraContainer .popHeadding span, .syllabusContainer .popHeadding span {
   float: right;
   cursor: pointer;
 }
-.extraContainer .popHeadding + div {
+.extraContainer .popHeadding + div, .syllabusContainer .popHeadding + div {
   overflow-y: auto;
   overflow-x: hidden;
   max-height: 710px;
 }
-.extraContainer .popContentWrapper {
+.extraContainer .popContentWrapper, .syllabusContainer .popContentWrapper {
   background: #f6fafd;
   /* Old browsers */
   /* FF3.6-15 */
@@ -4977,15 +4980,19 @@ div[rel='scrollcontent2'] {
   float: left;
   width: 100%;
 }
-.extraContainer .popContentWrapper .exheading {
+.extraContainer .popContentWrapper .exheading, .syllabusContainer .popContentWrapper .exheading {
   font-size: 14px;
   margin: 0px 0px 15px 0px;
 }
-.extraContainer .popContentWrapper .exheading span {
+.extraContainer .popContentWrapper .exheading span, .syllabusContainer .popContentWrapper .exheading span {
   display: block;
   font-size: 12px;
   color: #9c9d9f;
   padding-top: 5px;
+}
+
+.syllabusContainer {
+  max-width: 1000px;
 }
 
 .exBoxContainer {
@@ -5202,6 +5209,132 @@ div[rel='scrollcontent2'] {
 }
 .acc_content ul li:hover {
   background-color: #cecbcb;
+}
+
+.sysContentWrapper {
+  padding: 0px !important;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f9fe+0,f8eefd+100 */
+  background: #f5f9fe;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #f5f9fe 0%, #f8eefd 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(315deg, #f5f9fe 0%, #f8eefd 100%);
+  background: linear-gradient(135deg, #f5f9fe 0%, #f8eefd 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f9fe', endColorstr='#f8eefd',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+.sysContentWrapper .panel-parent {
+  float: left;
+  width: 100%;
+}
+.sysContentWrapper .panel-parent > .panel-heading {
+  padding: 5px 30px 0px 30px;
+}
+.sysContentWrapper .panel-parent > .panel-heading h4 {
+  padding: 10px 0px;
+}
+.sysContentWrapper .panel-parent > .panel-heading h4 a {
+  color: #390065;
+  font-weight: 400;
+  position: relative;
+}
+.sysContentWrapper .panel-parent > .panel-heading h4 a:hover, .sysContentWrapper .panel-parent > .panel-heading h4 a:focus {
+  text-decoration: none;
+}
+.sysContentWrapper .panel-parent > .panel-heading h4 a .sys-img {
+  margin-right: 10px;
+  display: inline-block;
+}
+.sysContentWrapper .panel-parent > .panel-heading h4 a[aria-expanded="true"]::before {
+  content: '';
+  position: absolute;
+  z-index: 99;
+  left: 64px;
+  bottom: -27px;
+  width: 35px;
+  height: 20px;
+  background-image: url("../images/accarrow.png");
+  background-repeat: no-repeat;
+}
+.sysContentWrapper .panel-parent > .panel-collapse {
+  background-color: #fff;
+  padding: 5px 30px;
+  border: solid 1px #dfccf3;
+  float: left;
+  width: 100%;
+}
+.sysContentWrapper .nestedContainer {
+  float: left;
+  width: 100%;
+}
+.sysContentWrapper .nestedContainer .panel-heading {
+  padding: 2px 0px 2px 10px;
+}
+.sysContentWrapper .nestedContainer .panel-heading h4 a {
+  font-weight: 700;
+  color: #5d5d5d;
+  font-size: 14px;
+}
+.sysContentWrapper .nestedContainer .panel-heading h4 a:hover, .sysContentWrapper .nestedContainer .panel-heading h4 a:focus {
+  text-decoration: none;
+}
+.sysContentWrapper .nestedContainer .panel-heading h4 a.collapsed {
+  color: #989898 !important;
+}
+.sysContentWrapper .nestedContainer .panel-collapse {
+  padding: 2px 0px 2px 30px;
+  float: left;
+  width: 100%;
+}
+.sysContentWrapper .nestedContainer .panel-collapse .acc-row {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+}
+.sysContentWrapper .nestedContainer .panel-collapse .acc-box-wrapper {
+  float: left;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin: 7.5px 0px;
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .sysContentWrapper .nestedContainer .panel-collapse .acc-box-wrapper {
+    width: 100%;
+  }
+}
+.sysContentWrapper .nestedContainer .panel-collapse .acc-box-wrapper .accBox {
+  border: solid 1px #dcdcfc;
+  padding: 10px;
+  float: left;
+  width: 100%;
+}
+.sysContentWrapper .nestedContainer .panel-collapse .acc-box-wrapper .accBox .boxRow {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.sysContentWrapper .nestedContainer .panel-collapse .acc-box-wrapper .accBox .boxRow .div {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.sysContentWrapper .nestedContainer .panel-collapse .acc-box-wrapper .accBox .boxRow .div.imgLeft {
+  width: 35%;
+}
+.sysContentWrapper .nestedContainer .panel-collapse .acc-box-wrapper .accBox .boxRow .div.imgLeft img {
+  width: 100%;
+}
+.sysContentWrapper .nestedContainer .panel-collapse .acc-box-wrapper .accBox .boxRow .div.contentRight {
+  width: 65%;
+  max-height: 148px;
+  overflow: hidden;
+}
+.sysContentWrapper .nestedContainer .panel-collapse .acc-box-wrapper .accBox .boxRow .div.contentRight p {
+  line-height: 14px;
+}
+.sysContentWrapper .nestedContainer .panel-collapse .acc-box-wrapper .accBox .boxRow .div.contentRight .small {
+  font-size: 11px;
 }
 
 /* Layout helpers
@@ -10765,7 +10898,7 @@ h4[cat-headding] {
   position: relative;
 }
 
-[tree-overlay], [extra-overlay] {
+[tree-overlay], [extra-overlay], [syllabus-overlay] {
   position: fixed;
   width: 100%;
   height: 100%;
