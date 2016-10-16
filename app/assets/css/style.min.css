@@ -3765,6 +3765,7 @@ ul[data-nasted-list] li a:hover, ul[data-nasted-list] li a:focus {
   background-color: #fff;
   color: #b3b3b3 !important;
   padding: 12px !important;
+  font-weight: bold !important;
 }
 @media only screen and (min-width: 1025px) {
   .send-button {
