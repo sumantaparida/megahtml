@@ -3232,10 +3232,11 @@ input[type="search"] {
 }
 
 .mega-contener h4 {
-  font-size: 23px;
+  font-size: 20px;
   color: #FFFFFF;
   font-weight: normal;
   font-style: italic;
+  margin-bottom: 2px;
 }
 @media only screen and (max-width: 767px) {
   .mega-contener h4 {
@@ -3322,13 +3323,13 @@ input[type="search"] {
   cursor: pointer;
 }
 
-.smk_accordion .accordion_in .acc_head > span {
+.smk_accordion .accordion_in .acc_head .cboxx {
   display: inline-block;
   width: auto;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 11px;
-  margin-right: 10px;
+  margin: 2px 6px;
 }
 
 .numburof .acc_icon_expand {
@@ -3428,6 +3429,17 @@ input[type="search"] {
 .smk_accordion.acc_with_icon .accordion_in .acc_content,
 .smk_accordion.acc_with_icon .accordion_in .acc_head {
   padding-left: 20px;
+}
+
+.anadir {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 80px;
+  font-size: 14px;
+}
+
+.Abox {
+  background-color: #eeff01 !important;
 }
 
 .bannerBottom {
@@ -3791,6 +3803,7 @@ ul[data-nasted-list] li a:hover, ul[data-nasted-list] li a:focus {
 }
 #BusinessProposal .massegebox {
   min-height: 80px;
+  padding: 6px 12px;
   width: 100%;
 }
 @media only screen and (min-width: 1025px) {
