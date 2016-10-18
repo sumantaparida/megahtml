@@ -1938,6 +1938,18 @@ ul[role="list50"] {
     }
   }
 }
+// Search
+[search] {
+  padding: 5px 8px;
+  font-size: 12px;
+  background-color: rgba(250,250,250,0.3);
+  border: none;
+  color: #fff;
+  &:focus, &:hover, &:active {
+    outline: none;
+    border: none;
+  }
+}
 //
 [loader] {
   position: fixed;

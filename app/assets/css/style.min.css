@@ -1977,6 +1977,18 @@ ul[role="list50"] li {
           transform: rotate(0deg);
 }
 
+[search] {
+  padding: 5px 8px;
+  font-size: 12px;
+  background-color: rgba(250, 250, 250, 0.3);
+  border: none;
+  color: #fff;
+}
+[search]:focus, [search]:hover, [search]:active {
+  outline: none;
+  border: none;
+}
+
 [loader] {
   position: fixed;
   width: 100%;
@@ -3283,6 +3295,11 @@ input[type="search"] {
     width: 45%;
   }
 }
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+  .megaPackImg > img {
+    width: 85%;
+  }
+}
 
 .smk_accordion {
   position: relative;
@@ -3332,7 +3349,7 @@ input[type="search"] {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 11px;
-  margin: 2px 6px;
+  margin: 2px;
 }
 
 .numburof .acc_icon_expand {
@@ -4550,9 +4567,14 @@ div[rel='scrollcontent2'] {
     width: 45%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 899px) {
   .product-hover {
     width: 100%;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+  .product-hover {
+    width: 85%;
   }
 }
 .product-hover::before {
@@ -4585,6 +4607,12 @@ div[rel='scrollcontent2'] {
   padding: 28px;
 }
 @media only screen and (max-width: 767px) {
+  .product-hover .Pcontainer {
+    padding: 15px;
+    height: 78%;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
   .product-hover .Pcontainer {
     padding: 15px;
     height: 78%;
@@ -8817,6 +8845,11 @@ yx-axis
 @media only screen and (min-width: 414px) and (max-width: 767px) {
   .megacoursesBanner {
     height: 1150px;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+  .megacoursesBanner {
+    height: 690px;
   }
 }
 
