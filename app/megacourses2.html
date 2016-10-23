@@ -386,9 +386,6 @@
             <a href="tel:34915697740"><img src="assets/images/callblack.png" alt="">(+34) 915697740</a>
           </li>
           <li class="hidden-xs">
-            <input type="text" search placeholder="Buscar en esta web">
-          </li>
-          <li class="hidden-xs">
             <a href="#">ventas@gmail.com</a>
           </li>
           <li class="chat hidden-xs">
@@ -1955,7 +1952,6 @@
                 </ul>
               </div>
             </li>
-
             <li class="plus_dropdown">
               <div class="dropdown-toggle pull-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span data-tab>&nbsp;</span>
@@ -1969,6 +1965,35 @@
                   <a class="dropdown-item" href="#">About</a>
                 </div>
                 <!-- // Dropdown End -->
+              </div>
+            </li>
+            <li class="search-desktop">
+              <a class="pull-left" href="javascript:void();"><span><i class="fa fa-search" aria-hidden="true"></i></span></a>
+              <div class="search-desktop-popup">
+                <input type="text" placeholder="Search">
+                <ul>
+                  <li>
+                    <a href="">
+                      <span><img src="assets/images/product_medium_icon.png" alt=""></span>
+                      <span>Megacurso <strong>Nuke</strong> <i>“Maestro en 35h”</i></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span><img src="assets/images/product_medium_icon.png" alt=""></span>
+                      <span>Maestría <strong>Nuke</strong> “Composiciones totalmente originales”</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span><img src="assets/images/product_medium_icon.png" alt=""></span>
+                      <span>Megacurso <strong>Nuke</strong> <i>“Maestro en 35h”</i></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">See all results</a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li signIn><a href="#" class="signIn"><span>Login / Registrarse</span></a></li>
@@ -2150,6 +2175,7 @@
           </div>
           <div class="col-xs-12 col-sm-4 nopadding text-center megaPackImg">
             <img src="assets/images/megapack-b-img.png" alt="">
+            <div class="product-hover-btn">View</div>
             <div class="product-hover">
               <div class="Pcontainer">
                 <h1>EXPRESS<br><span>CHECKOUT</span><span>PAY IN 1 CLICK</span></h1>
@@ -2317,21 +2343,22 @@
                 <li class=""><a href="#DownloadPdf" data-toggle="tab">Download PDF</a></li>
                 <li class=""><a href="#gift" data-toggle="tab">Give as a gift</a></li>
                 <li class=""><a href="#BusinessProposal" data-toggle="tab">Business proposal</a></li>
-
-
               </ul>
               <!-- // Dropdown Start -->
               <select name="" class="mtabDropdown">
-                <option tab-id="#FreeLessons">Free Lessons</option>
-                <option tab-id="#Description">Course detailed description</option>
-                <option tab-id="#Delivery">Delivery</option>
-                <option tab-id="#Payment">Payment</option>
-                <option tab-id="#Requirements">Requirements</option>
-                <option tab-id="#Syllabus">Syllabus</option>
-                <option tab-id="#Diploma">Diploma</option>
-                <option tab-id="#Support">Support</option>
-                <option tab-id="#Benefits">Benefits</option>
-                <option tab-id="#Student">Student examples</option>
+                <option tab-id="#FreeLessons" data-toggle="tab">Free Lessons</option>
+                <option tab-id="#Description" data-toggle="tab">Course detailed description</option>
+                <option tab-id="#Requirements" data-toggle="tab">Requirements</option>
+                <option tab-id="#Benefits" data-toggle="tab">Benefits</option>
+                <option tab-id="#Student" data-toggle="tab">Student examples</option>
+                <option tab-id="#Deoptionvery" data-toggle="tab">Deoptionvery</option>
+                <option tab-id="#Payment" data-toggle="tab">Payment</option>
+                <option tab-id="#Syllabus" data-toggle="tab">Syllabus</option>
+                <option tab-id="#Diploma" data-toggle="tab">Diploma</option>
+                <option tab-id="#Support" data-toggle="tab">Support</option>
+                <option tab-id="#DownloadPdf" data-toggle="tab">Download PDF</option>
+                <option tab-id="#gift" data-toggle="tab">Give as a gift</option>
+                <option tab-id="#BusinessProposal" data-toggle="tab">Business proposal</option>
               </select>
               <!-- // Dropdown End -->
             </div>
@@ -2686,12 +2713,13 @@
                       <div class="form-group">
                         <label class="control-label col-sm-3" for="hisname"><strong>NUMBAR OF LICENSES:</strong></label>
                         <div class="col-sm-9">
-                          <select class="select" name="" id="">
+                          <input type="text" class="form-control" placeholder="1" style="width:150px;">
+                          <!-- <select class="select" name="" id="">
                             <option value="">1</option>
                             <option value="">2</option>
                             <option value="">3</option>
                             <option value="">4</option>
-                          </select>
+                          </select> -->
                         </div>
                       </div>
                     </form>
@@ -2870,9 +2898,9 @@
             <div class="full">
               <p>From this distant vantage point, the Earth might not seem of any particular interest. But for us, it's different. Consider again that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every
                 human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, <a href="#">Read More...</a></p>
-                <p><a href="#" class="reply"><i class="fa fa-reply" aria-hidden="true"></i> Reply</a></p>
+                <p><a href="#" class="reply hide"><i class="fa fa-reply" aria-hidden="true"></i> Reply</a></p>
             </div>
-            <div class="full replayComment hide">
+            <div class="full replayComment">
               <div class="title-set col-xs-12 nopadding">
                 <div class="left">
                   <div class="comment-pic"><img src="assets/images/avataricon1.png" alt=""></div>
@@ -3566,8 +3594,8 @@
                               <div class="boxRow">
                                 <div class="div imgLeft"><img src="assets/images/accImg.jpg" alt=""></div>
                                 <div class="div contentRight">
-                                  <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong></p>
-                                  <p class="small nomargin">Todo empieza por un principio, por lo que el proyecto será el inicio de todo montaje audiovisual en Premiere Pro. Pero no sólo los ajustes del proyecto son importantes, sino que nuestra secuencia también merece toda nuestra atención. Arrancaremos uno de nuestros proyectos de 0, para llevarlo hasta 100.</p>
+                                  <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong><br><small style="font-size:10px;"><strong>[COURSE DURATION]</strong></small></p>
+                                  <p class="small nomargin">Todo empieza por un principio, por lo que el proyecto será el inicio de todo montaje audiovisual en Premiere Pro. Pero no sólo los ajustes del proyecto son importantes.</p>
                                 </div>
                               </div>
                             </div>
@@ -3577,8 +3605,8 @@
                               <div class="boxRow">
                                 <div class="div imgLeft"><img src="assets/images/accImg.jpg" alt=""></div>
                                 <div class="div contentRight">
-                                  <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong></p>
-                                  <p class="small nomargin">Todo empieza por un principio, por lo que el proyecto será el inicio de todo montaje audiovisual en Premiere Pro. Pero no sólo los ajustes del proyecto son importantes, sino que nuestra secuencia también merece toda nuestra atención. Arrancaremos uno de nuestros proyectos de 0, para llevarlo hasta 100.</p>
+                                  <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong><br><small style="font-size:10px;"><strong>[COURSE DURATION]</strong></small></p>
+                                  <p class="small nomargin">Todo empieza por un principio, por lo que el proyecto será el inicio de todo montaje audiovisual en Premiere Pro. Pero no sólo los ajustes del proyecto son importantes.</p>
                                 </div>
                               </div>
                             </div>
@@ -3588,8 +3616,8 @@
                               <div class="boxRow">
                                 <div class="div imgLeft"><img src="assets/images/accImg.jpg" alt=""></div>
                                 <div class="div contentRight">
-                                  <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong></p>
-                                  <p class="small nomargin">Todo empieza por un principio, por lo que el proyecto será el inicio de todo montaje audiovisual en Premiere Pro. Pero no sólo los ajustes del proyecto son importantes, sino que nuestra secuencia también merece toda nuestra atención. Arrancaremos uno de nuestros proyectos de 0, para llevarlo hasta 100.</p>
+                                  <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong><br><small style="font-size:10px;"><strong>[COURSE DURATION]</strong></small></p>
+                                  <p class="small nomargin">Todo empieza por un principio, por lo que el proyecto será el inicio de todo montaje audiovisual en Premiere Pro. Pero no sólo los ajustes del proyecto son importantes.</p>
                                 </div>
                               </div>
                             </div>
@@ -3599,8 +3627,8 @@
                               <div class="boxRow">
                                 <div class="div imgLeft"><img src="assets/images/accImg.jpg" alt=""></div>
                                 <div class="div contentRight">
-                                  <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong></p>
-                                  <p class="small nomargin">Todo empieza por un principio, por lo que el proyecto será el inicio de todo montaje audiovisual en Premiere Pro. Pero no sólo los ajustes del proyecto son importantes, sino que nuestra secuencia también merece toda nuestra atención. Arrancaremos uno de nuestros proyectos de 0, para llevarlo hasta 100.</p>
+                                  <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong><br><small style="font-size:10px;"><strong>[COURSE DURATION]</strong></small></p>
+                                  <p class="small nomargin">Todo empieza por un principio, por lo que el proyecto será el inicio de todo montaje audiovisual en Premiere Pro. Pero no sólo los ajustes del proyecto son importantes.</p>
                                 </div>
                               </div>
                             </div>
@@ -3626,7 +3654,7 @@
                              <div class="boxRow">
                                <div class="div imgLeft"><img src="assets/images/accImg.jpg" alt=""></div>
                                <div class="div contentRight">
-                                 <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong></p>
+                                 <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong><br><small style="font-size:10px;"><strong>[COURSE DURATION]</strong></small></p>
                                  <p class="small nomargin">Todo empieza por un principio, por lo que el proyecto será el inicio de todo montaje audiovisual en Premiere Pro. Pero no sólo los ajustes del proyecto son importantes, sino que nuestra secuencia también merece toda nuestra atención. Arrancaremos uno de nuestros proyectos de 0, para llevarlo hasta 100.</p>
                                </div>
                              </div>
@@ -3637,7 +3665,7 @@
                              <div class="boxRow">
                                <div class="div imgLeft"><img src="assets/images/accImg.jpg" alt=""></div>
                                <div class="div contentRight">
-                                 <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong></p>
+                                 <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong><br><small style="font-size:10px;"><strong>[COURSE DURATION]</strong></small></p>
                                  <p class="small nomargin">Todo empieza por un principio, por lo que el proyecto será el inicio de todo montaje audiovisual en Premiere Pro. Pero no sólo los ajustes del proyecto son importantes, sino que nuestra secuencia también merece toda nuestra atención. Arrancaremos uno de nuestros proyectos de 0, para llevarlo hasta 100.</p>
                                </div>
                              </div>
@@ -3648,7 +3676,7 @@
                              <div class="boxRow">
                                <div class="div imgLeft"><img src="assets/images/accImg.jpg" alt=""></div>
                                <div class="div contentRight">
-                                 <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong></p>
+                                 <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong><br><small style="font-size:10px;"><strong>[COURSE DURATION]</strong></small></p>
                                  <p class="small nomargin">Todo empieza por un principio, por lo que el proyecto será el inicio de todo montaje audiovisual en Premiere Pro. Pero no sólo los ajustes del proyecto son importantes, sino que nuestra secuencia también merece toda nuestra atención. Arrancaremos uno de nuestros proyectos de 0, para llevarlo hasta 100.</p>
                                </div>
                              </div>
@@ -3659,7 +3687,7 @@
                              <div class="boxRow">
                                <div class="div imgLeft"><img src="assets/images/accImg.jpg" alt=""></div>
                                <div class="div contentRight">
-                                 <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong></p>
+                                 <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong><br><small style="font-size:10px;"><strong>[COURSE DURATION]</strong></small></p>
                                  <p class="small nomargin">Todo empieza por un principio, por lo que el proyecto será el inicio de todo montaje audiovisual en Premiere Pro. Pero no sólo los ajustes del proyecto son importantes, sino que nuestra secuencia también merece toda nuestra atención. Arrancaremos uno de nuestros proyectos de 0, para llevarlo hasta 100.</p>
                                </div>
                              </div>
@@ -3670,7 +3698,7 @@
                              <div class="boxRow">
                                <div class="div imgLeft"><img src="assets/images/accImg.jpg" alt=""></div>
                                <div class="div contentRight">
-                                 <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong></p>
+                                 <p><strong>19 | Preparar la salida tras la correción de color para cine, tv, etc</strong><br><small style="font-size:10px;"><strong>[COURSE DURATION]</strong></small></p>
                                  <p class="small nomargin">Todo empieza por un principio, por lo que el proyecto será el inicio de todo montaje audiovisual en Premiere Pro. Pero no sólo los ajustes del proyecto son importantes, sino que nuestra secuencia también merece toda nuestra atención. Arrancaremos uno de nuestros proyectos de 0, para llevarlo hasta 100.</p>
                                </div>
                              </div>

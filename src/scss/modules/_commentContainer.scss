@@ -90,7 +90,7 @@
   .title-set {
     border-top: solid 1px #dedede;
     border-bottom: solid 1px #dedede;
-    padding: 15px 0px !important;
+    padding: 15px 0px;
   }
 }
 .reply {
@@ -133,4 +133,10 @@
 }
 .div-right ul li a:hover {
   color: #56acd8;
+}
+.replayComment {
+  > div {
+    background-color: rgba(197, 196, 196, 0.2);
+    padding: 15px !important;
+  }
 }

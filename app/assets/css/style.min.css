@@ -2029,9 +2029,114 @@ ul[role="list50"] li {
   width: 100%;
 }
 
-/*
- *  STYLE 3
- */
+.search-desktop {
+  display: none;
+}
+@media only screen and (min-width: 1025px) {
+  .search-desktop {
+    display: block;
+  }
+  .search-desktop a span {
+    margin-right: 8px;
+  }
+  .search-desktop a.active::before {
+    display: none;
+  }
+}
+
+.search-desktop-popup {
+  display: none;
+  position: fixed;
+  width: 500px;
+  height: 40px;
+  background: #fff;
+  left: 0;
+  right: 0;
+  top: 25%;
+  margin: auto;
+  z-index: 500;
+}
+.search-desktop-popup input[type="text"] {
+  width: 100%;
+  height: 40px;
+  color: #057db7;
+  font-size: 20px;
+  border: none;
+  padding: 3px 20px 5px 20px;
+  background: #fcf3f9;
+  background: -webkit-gradient(left top, right top, color-stop(0%, #fcf3f9), color-stop(100%, #f3f8fa));
+  background: -webkit-linear-gradient(left, #fcf3f9 0%, #f3f8fa 100%);
+  background: linear-gradient(to right, #fcf3f9 0%, #f3f8fa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf3f9', endColorstr='#f3f8fa', GradientType=1 );
+}
+.search-desktop-popup input[type="text"]:focus, .search-desktop-popup input[type="text"]:hover, .search-desktop-popup input[type="text"]:active {
+  outline: none;
+  border: none;
+}
+.search-desktop-popup input[type="text"]::-webkit-input-placeholder {
+  color: #057db7;
+}
+.search-desktop-popup input[type="text"]::-moz-placeholder {
+  color: #057db7;
+}
+.search-desktop-popup input[type="text"]:-ms-input-placeholder {
+  color: #057db7;
+}
+.search-desktop-popup input[type="text"]:-moz-placeholder {
+  color: #057db7;
+}
+.search-desktop-popup ul {
+  background: #f5ddee;
+  background: -webkit-gradient(left top, right top, color-stop(0%, #f5ddee), color-stop(100%, #dcebf0));
+  background: -webkit-linear-gradient(left, #f5ddee 0%, #dcebf0 100%);
+  background: linear-gradient(to right, #f5ddee 0%, #dcebf0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5ddee', endColorstr='#dcebf0', GradientType=1 );
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.search-desktop-popup ul li {
+  padding: 10px 20px;
+}
+.search-desktop-popup ul li a {
+  color: #393939;
+  display: block;
+  position: relative;
+}
+.search-desktop-popup ul li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -11px;
+  height: 1px;
+  width: 100%;
+  background: #d5c0cf;
+}
+.search-desktop-popup ul li:hover {
+  background-color: #f2f1f7;
+}
+.search-desktop-popup ul li:last-child {
+  background: #ebb8dc;
+  background: -webkit-gradient(left top, right top, color-stop(0%, #ebb8dc), color-stop(100%, #b6d5e1));
+  background: -webkit-linear-gradient(left, #ebb8dc 0%, #b6d5e1 100%);
+  background: linear-gradient(to right, #ebb8dc 0%, #b6d5e1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebb8dc', endColorstr='#b6d5e1', GradientType=1 );
+  padding: 10px 20px;
+}
+.search-desktop-popup ul li:last-child a {
+  text-align: center;
+  font-size: 14px;
+}
+.search-desktop-popup ul li:last-child a::before {
+  bottom: inherit;
+  top: -10px;
+  background: #ebb8dc;
+  background: -webkit-gradient(left top, right top, color-stop(0%, #ebb8dc), color-stop(100%, #b6d5e1));
+  background: -webkit-linear-gradient(left, #ebb8dc 0%, #b6d5e1 100%);
+  background: linear-gradient(to right, #ebb8dc 0%, #b6d5e1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebb8dc', endColorstr='#b6d5e1', GradientType=1 );
+}
+
 /* form css */
 fieldset {
   padding: 0;
@@ -3220,7 +3325,7 @@ input[type="search"] {
   text-transform: uppercase;
   color: #FFFFFF;
   font-weight: bold;
-  margin-top: 5px;
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 767px) {
@@ -3251,7 +3356,7 @@ input[type="search"] {
   font-weight: normal;
   font-style: italic;
   margin-bottom: 7px;
-  margin-top: 0px;
+  margin-top: -2px;
 }
 @media only screen and (max-width: 767px) {
   .mega-contener h4 {
@@ -3462,6 +3567,28 @@ input[type="search"] {
   background-color: #eeff01 !important;
 }
 
+.product-hover-btn {
+  position: absolute;
+  background: #fdfdfd;
+  left: 0;
+  right: 0;
+  width: 168px;
+  height: 35px;
+  margin: auto;
+  bottom: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 36px;
+  color: #000;
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .product-hover-btn {
+    display: block;
+  }
+}
+
 .bannerBottom {
   padding: 15px 0px 15px 0px;
   margin-top: 35px;
@@ -3565,7 +3692,7 @@ ul[data-nasted-list] {
 ul[data-nasted-list] li {
   float: left;
   background-color: rgba(250, 250, 250, 0.3);
-  padding: 5px;
+  padding: 5px 5px 3px 5px;
   margin: 0px 4px;
 }
 @media only screen and (max-width: 767px) {
@@ -3580,7 +3707,7 @@ ul[data-nasted-list] li a span {
   font-size: 12px;
 }
 ul[data-nasted-list] li a span img {
-  margin: 0px 3px;
+  margin: 0px 3px 3px 3px;
 }
 ul[data-nasted-list] li a:hover, ul[data-nasted-list] li a:focus {
   text-decoration: none;
@@ -3756,11 +3883,18 @@ ul[data-nasted-list] li a:hover, ul[data-nasted-list] li a:focus {
 }
 .addonextra a:hover {
   text-decoration: none;
+  background: #01cb67;
+  color: #fff;
 }
 
 .sendyourmail {
   margin-top: 10px;
   max-width: 630px;
+}
+@media only screen and (max-width: 767px) {
+  .sendyourmail {
+    padding: 0px !important;
+  }
 }
 .sendyourmail input[type="text"] {
   width: 100%;
@@ -4153,7 +4287,7 @@ div[rel='scrollcontent2'] {
 .replayComment .title-set {
   border-top: solid 1px #dedede;
   border-bottom: solid 1px #dedede;
-  padding: 15px 0px !important;
+  padding: 15px 0px;
 }
 
 .reply {
@@ -4201,6 +4335,11 @@ div[rel='scrollcontent2'] {
 
 .div-right ul li a:hover {
   color: #56acd8;
+}
+
+.replayComment > div {
+  background-color: rgba(197, 196, 196, 0.2);
+  padding: 15px !important;
 }
 
 .bannerContent h1 {
@@ -4958,7 +5097,7 @@ div[rel='scrollcontent2'] {
 .extraContainer, .syllabusContainer {
   max-width: 800px;
   width: 100%;
-  height: 85%;
+  height: 730px;
   background: #f6fafd;
   /* Old browsers */
   /* FF3.6-15 */
@@ -5008,7 +5147,7 @@ div[rel='scrollcontent2'] {
 .extraContainer .popHeadding + div, .syllabusContainer .popHeadding + div {
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: 710px;
+  max-height: 670px;
 }
 .extraContainer .popContentWrapper, .syllabusContainer .popContentWrapper {
   background: #f6fafd;
@@ -5292,23 +5431,25 @@ div[rel='scrollcontent2'] {
   margin-right: 10px;
   display: inline-block;
 }
-.sysContentWrapper .panel-parent > .panel-heading h4 a[aria-expanded="true"]::before {
-  content: '';
-  position: absolute;
-  z-index: 99;
-  left: 64px;
-  bottom: -27px;
-  width: 35px;
-  height: 20px;
-  background-image: url("../images/accarrow.png");
-  background-repeat: no-repeat;
-}
 .sysContentWrapper .panel-parent > .panel-collapse {
   background-color: #fff;
   padding: 5px 30px;
   border: solid 1px #dfccf3;
   float: left;
   width: 100%;
+  position: relative;
+}
+.sysContentWrapper .panel-parent > .panel-collapse.in::before {
+  content: '';
+  position: absolute;
+  z-index: 99;
+  left: 93px;
+  top: -15px;
+  width: 35px;
+  height: 15px;
+  background-image: url("../images/accarrow.png");
+  background-repeat: no-repeat;
+  /* border: solid 1px red; */
 }
 .sysContentWrapper .nestedContainer {
   float: left;
@@ -5316,6 +5457,11 @@ div[rel='scrollcontent2'] {
 }
 .sysContentWrapper .nestedContainer .panel-heading {
   padding: 2px 0px 2px 10px;
+}
+@media only screen and (max-width: 767px) {
+  .sysContentWrapper .nestedContainer .panel-heading {
+    padding: 2px 0px 2px 0px;
+  }
 }
 .sysContentWrapper .nestedContainer .panel-heading h4 a {
   font-weight: 700;
@@ -5332,6 +5478,11 @@ div[rel='scrollcontent2'] {
   padding: 2px 0px 2px 30px;
   float: left;
   width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .sysContentWrapper .nestedContainer .panel-collapse {
+    padding: 2px 0px 2px 0px;
+  }
 }
 .sysContentWrapper .nestedContainer .panel-collapse .acc-row {
   margin-left: -7.5px;
@@ -10948,7 +11099,7 @@ h4[cat-headding] {
   position: relative;
 }
 
-[tree-overlay], [extra-overlay], [syllabus-overlay] {
+[tree-overlay], [extra-overlay], [syllabus-overlay], [searchDesktop-overlay] {
   position: fixed;
   width: 100%;
   height: 100%;

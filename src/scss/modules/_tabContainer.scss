@@ -156,12 +156,17 @@
     font-weight: bold;
     &:hover {
       text-decoration: none;
+      background: #01cb67;
+      color: #fff;
     }
   }
 }
 .sendyourmail {
   margin-top: 10px;
   max-width: 630px;
+  @media only screen and (max-width:767px) {
+    padding: 0px !important;
+  }
   input[type="text"] {
     @media only screen and (min-width:1025px) {
       width: 390px;

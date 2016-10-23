@@ -10,7 +10,7 @@
   text-transform: uppercase;
   color: #FFFFFF;
   font-weight: bold;
-  margin-top: 5px;
+  margin-top: 0px;
   margin-bottom: 0px;
   @media only screen and (max-width:767px) {
     font-size: 26px;
@@ -35,7 +35,7 @@
   font-weight: normal;
   font-style: italic;
   margin-bottom: 7px;
-  margin-top: 0px;
+  margin-top: -2px;
   @media only screen and (max-width:767px) {
     font-size: 22px;
     margin-top: 0px;
@@ -211,3 +211,22 @@
 }
 .anadir { text-decoration: underline; font-weight: bold; margin-left:80px; font-size: 14px; }
 .Abox { background-color: #eeff01 !important; }
+.product-hover-btn {
+  position: absolute;
+      background: #fdfdfd;
+      left: 0;
+      right: 0;
+      width: 168px;
+      height: 35px;
+      margin: auto;
+      bottom: 50px;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      line-height: 36px;
+      color: #000;
+      display: none;
+      @media only screen and (max-width:768px) {
+        display: block;
+      }
+}
