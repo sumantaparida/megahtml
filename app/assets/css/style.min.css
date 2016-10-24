@@ -2062,7 +2062,7 @@ ul[role="list50"] li {
   color: #057db7;
   font-size: 20px;
   border: none;
-  padding: 3px 20px 5px 20px;
+  padding: 4px 20px 5px 20px;
   background: #fcf3f9;
   background: -webkit-gradient(left top, right top, color-stop(0%, #fcf3f9), color-stop(100%, #f3f8fa));
   background: -webkit-linear-gradient(left, #fcf3f9 0%, #f3f8fa 100%);
@@ -10257,6 +10257,83 @@ yx-axis
 }
 .extraProgram .extraProgramRight .circle img {
   width: 100%;
+}
+
+.searchBanner {
+  height: 460px;
+  background-image: url("../images/search.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.searchBanner .sub-links {
+  margin-bottom: 10px;
+}
+
+.search_banner_content {
+  padding: 0px !important;
+  margin-top: 70px;
+}
+.search_banner_content h1 {
+  text-align: left;
+  font-weight: 400;
+}
+@media only screen and (max-width: 767px) {
+  .search_banner_content h1 {
+    font-size: 30px;
+  }
+}
+
+.search-content h3 {
+  color: #124078;
+  font-size: 28px;
+  font-weight: 300;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.dataBox {
+  border: solid 3px #bad9ff;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+.dataBox .dataImg {
+  float: left;
+  min-width: 45px;
+}
+.dataBox .dataContant {
+  float: left;
+  max-width: 60%;
+}
+.dataBox .dataContant h4 {
+  margin: 0px;
+  line-height: 18px;
+}
+.dataBox .dataContant h4 .textbig {
+  display: block;
+  font-size: 20px;
+  color: #124078;
+  font-weight: 400;
+}
+.dataBox .dataContant h4 .textsmall {
+  display: block;
+  font-size: 14px;
+  color: #7199cb;
+  margin-top: 5px;
+  font-weight: 300;
+}
+.dataBox .dataContant a {
+  border: solid 1px #224168;
+  padding: 2px 5px;
+  margin-top: 8px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  color: #224168;
+}
+.dataBox .dataContant a:hover {
+  text-decoration: none;
+  color: #224168;
 }
 
 .black {
