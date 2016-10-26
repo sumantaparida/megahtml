@@ -16,22 +16,28 @@
 @import "../modules/_search.scss";
 // unick class
 .black {
-  background: #000;
+  background: #000 !important;
 }
 .green {
-  background: green;
+  background: green !important;
 }
 .white {
-  background: #fff;
+  background: #fff !important;
 }
 .red {
-  background: #f00;
+  background: #f00 !important;
 }
 .gray {
-  background: #dedede;
+  background: #dedede !important;
+}
+.yellow {
+  background: #fffda6 !important;
+}
+.blue {
+  background: #337ab7 !important;
 }
 .radus50 {
-  border-radius: 50px !important;
+  border-radius: 50px;
 }
 /*--Middle Body CSS--*/
 .mid-body {
@@ -101,6 +107,9 @@
   @media only screen and (min-width:1915px) {
     width: 33.3333%;
   }
+  @media only screen and (min-width:568px) and (max-width:736px) {
+    width: 33.3333%;
+  }
 }
 .mega-courses > ul > li > h3 {
   position: relative;
@@ -140,6 +149,9 @@
     @media only screen and (min-width:1600px) {
       font-size: 30px;
       height: 35px;
+    }
+    @media only screen and (min-width:568px) and (max-width:736px) {
+      font-size: 79%;
     }
   }
 }

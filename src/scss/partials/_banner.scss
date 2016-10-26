@@ -308,7 +308,43 @@
       padding: 10px 30px;
     }
   }
+  .additionalBannerBox {
+    @media only screen and (max-width:768px) {
+      margin-top: 0px;
+    }
+    @media only screen and (min-width:1025px) {
+      margin-top: 190px;
+    }
+    ul {
+      padding: 0px;
+      margin: 0px;
+      list-style: none;
+      li {
+        display: inline-block;
+        background: #fff;
+        margin: 5px;
+        padding: 5px;
+        text-align: center;
+        width: 75px;
+        span {
+          float: left;
+          width: 100%;
+          text-align: center;
+          &:first-child {
+            font-size: 32px;
+            color: #0273a7;
+          }
+          &:last-child {
+            font-size: 14px;
+            color: #1398d4;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
 }
+
 .additionalBannerRight {
   .bannerVideoBox {
     width: 415px;

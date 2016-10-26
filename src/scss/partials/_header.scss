@@ -1300,11 +1300,11 @@ span.info {
             padding: 0;
             > li {
               display: inline-block;
-              margin-right: 5px;
+              margin-right:5px;
               min-width: 60px;
               a {
                 background: #fff;
-                border: solid 1px #fff;
+                // border: solid 1px #fff;
                 color: #000;
                 display: block;
                 float: left;
@@ -1329,7 +1329,7 @@ span.info {
             }
             li:nth-of-type(3) {
               a {
-                background: #fffda6;
+                // background: #fffda6;
                 padding: 2px 6px;
               }
             }
