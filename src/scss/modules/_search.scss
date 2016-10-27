@@ -94,7 +94,7 @@
     }
     .dataBoxLeft {
       width: 100%;
-      padding: 10px;
+      padding: 15px 20px 20px 20px;
       position: relative;
       @media only screen and (min-width:1025px) {
         width: 60%;
@@ -106,15 +106,16 @@
         span {
           display: block;
           &.pro_small {
-            font-size: 18px;
+            font-size: 14px;
             font-weight: normal;
           }
           &.pro_big {
-            font-size: 26px;
+            font-size: 20px;
             font-weight: bold;
+            line-height: 20px;
           }
           &.pro_italic {
-            font-size: 20px;
+            font-size: 16px;
             font-style: italic;
             font-weight: normal;
           }
@@ -156,6 +157,9 @@
       }
       p {
         color: #224168;
+        float: left;
+        font-size: 12px;
+        line-height: 14px;
       }
       // Button Container
       .buttonContainer {
