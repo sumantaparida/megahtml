@@ -1,5 +1,67 @@
-.login_container {
-  .allmegacoursesBanner {
-    height: 100px;
+.loginContainer {
+  .loginBanner {
+    background-image: url(../images/freelession-banner.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 145px;
+  }
+  .loginWrapper {
+    .row {
+      @media only screen and (min-width:1024px) {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+      }
+    }
+  }
+  [class*="login-"] {
+    padding: 0px;
+    &.login-Left-wrapper {
+      background-color: #fff;
+    }
+    &.login-Right-wrapper {
+      background: #f1e5ee;
+      background: -webkit-linear-gradient(-45deg, #f1e5ee 0%, #e6eef1 100%);
+      background: -webkit-linear-gradient(315deg, #f1e5ee 0%, #e6eef1 100%);
+      background: linear-gradient(135deg, #f1e5ee 0%, #e6eef1 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e5ee', endColorstr='#e6eef1',GradientType=1 );
+    }
+    .login-Left-data {
+      float: right;
+      width: 100%;
+      padding: 15px;
+      @media only screen and (min-width:1024px) {
+        padding: 25px 15px;
+        width: 70%;
+      }
+    }
+    .login-Right-data {
+      float: left;
+      width: 100%;
+      padding: 15px;
+      @media only screen and (min-width:1024px) {
+        padding: 25px 15px;
+        width: 60%;
+      }
+    }
+    h2 {
+      margin: 0px 0px 15px 0px;
+      font-weight: bold;
+    }
+  }
+}
+//
+.register-btn {
+  border-radius: 0px !important;
+  background-color: #524a7b !important;
+  color: #fff !important;
+  border: 0px !important;
+  border-radius: 2px !important;
+  padding: 10px 30px !important;
+  text-align: center !important;
+  width: 150px;
+  @media only screen and (max-width:768px) {
+    width: 100%;
   }
 }

@@ -10609,6 +10609,427 @@ yx-axis
   text-decoration: underline;
 }
 
+[class*=checkout-] .mainNav {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#311e2d+0,262430+100 */
+  background: #311e2d;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #311e2d 0%, #262430 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(315deg, #311e2d 0%, #262430 100%);
+  background: linear-gradient(135deg, #311e2d 0%, #262430 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#311e2d', endColorstr='#262430',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  padding: 20px 0px;
+  position: relative;
+}
+[class*=checkout-] .mainNav::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#311e2d+0,cfbc2a+50&0+19,1+50,0+82 */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(49, 30, 45, 0) 0%, rgba(109, 90, 44, 0) 19%, #cfbc2a 50%, rgba(207, 188, 42, 0) 82%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(315deg, rgba(49, 30, 45, 0) 0%, rgba(109, 90, 44, 0) 19%, #cfbc2a 50%, rgba(207, 188, 42, 0) 82%);
+  background: linear-gradient(135deg, rgba(49, 30, 45, 0) 0%, rgba(109, 90, 44, 0) 19%, #cfbc2a 50%, rgba(207, 188, 42, 0) 82%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00311e2d', endColorstr='#00cfbc2a',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+[class*=checkout-] .wrapper {
+  margin-top: 142px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4b3047+0,3b394b+100 */
+  background: #4b3047;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #4b3047 0%, #3b394b 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(315deg, #4b3047 0%, #3b394b 100%);
+  background: linear-gradient(135deg, #4b3047 0%, #3b394b 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b3047', endColorstr='#3b394b',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+@media only screen and (max-width: 639px) {
+  [class*=checkout-] .wrapper {
+    margin-top: 116px;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  [class*=checkout-] .wrapper {
+    margin-top: 128px;
+  }
+}
+[class*=checkout-] .wrapper .container {
+  padding: 15px 0px !important;
+}
+
+.breadCrumbs p {
+  margin-bottom: 0px;
+}
+.breadCrumbs p a {
+  color: #979797;
+  text-decoration: none;
+}
+.breadCrumbs p a:hover, .breadCrumbs p a:focus {
+  text-decoration: none;
+}
+
+.gridContainer [class*="grid-"] {
+  border: solid 1px #219cc7;
+  margin: 15px 0px;
+  background-color: #fff;
+}
+.gridContainer [class*="grid-"] .gridHeading {
+  border-bottom: solid 1px #219cc7;
+  padding: 15px;
+  background-color: rgba(175, 226, 250, 0.2);
+}
+.gridContainer [class*="grid-"] .gridHeading h2 {
+  color: #037da8;
+  font-size: 18px;
+  margin: 0px;
+  font-weight: bold;
+}
+.gridContainer [class*="grid-"] .gridContaint {
+  padding: 0px 20px;
+}
+.gridContainer [class*="grid-"] .gridContaint .gridSection {
+  border-bottom: solid 1px #d1d1d1;
+  padding: 15px;
+}
+
+.cdheadding {
+  margin: 0px;
+}
+
+.csmall {
+  font-size: 13px;
+  font-weight: normal;
+  display: block;
+}
+
+.cbig {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin: 5px 0px 2px 0px;
+}
+
+.citalic {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  font-style: italic;
+}
+
+.addtionalinfo {
+  margin: 8px 0px 0px 0px;
+  padding: 0px;
+  list-style: none;
+  float: left;
+}
+.addtionalinfo li {
+  float: left;
+}
+.addtionalinfo li a, .addtionalinfo li span {
+  color: #9e9e9e;
+  font-size: 13px;
+}
+.addtionalinfo li a:hover, .addtionalinfo li a:focus, .addtionalinfo li span:hover, .addtionalinfo li span:focus {
+  text-decoration: none;
+}
+.addtionalinfo li span a {
+  display: block;
+}
+.addtionalinfo li span a:hover, .addtionalinfo li span a:focus {
+  text-decoration: none;
+}
+.addtionalinfo li > div {
+  background-color: #f7f7f7 !important;
+}
+.addtionalinfo li > div > span {
+  background-color: #dbdbdb;
+}
+.addtionalinfo li:first-child {
+  margin-right: 5px;
+}
+
+.flex {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-text {
+  margin: 0px;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+.right-text span {
+  display: block;
+}
+.right-text span.rsmall {
+  font-size: 12px;
+  color: #999;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.right-text span.rbig {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.recommendedProductContainer {
+  padding: 10px;
+  margin: 30px 5px;
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .recommendedProductContainer {
+    margin: 17px 0px;
+  }
+}
+.recommendedProductContainer .recommendedProduct {
+  border: 2px solid #e7e7e7;
+  background-color: #fafafa;
+  padding: 15px;
+  color: #ababab;
+}
+.recommendedProductContainer .recommendedProduct > p {
+  color: #ababab;
+  letter-spacing: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.recommendedProductContainer .recommendedProduct .small {
+  font-size: 11px;
+  line-height: 12px;
+}
+.recommendedProductContainer .recommendedProduct .pBig {
+  font-size: 16px;
+  font-weight: bold;
+}
+.recommendedProductContainer .liner::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 5px;
+  background-color: #d7d7d7;
+}
+@media only screen and (min-width: 900px) {
+  .recommendedProductContainer .liner::after {
+    width: 1px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    left: inherit;
+  }
+}
+
+.para {
+  float: left;
+  width: 100%;
+  color: #ababab;
+  margin: 10px 0px;
+}
+
+.last-para {
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  margin: 10px 0px 20px 0px;
+}
+.last-para span:first-child {
+  font-style: italic;
+}
+.last-para span:first-child a {
+  color: #ababab;
+  text-decoration: underline;
+}
+.last-para span:last-child {
+  color: #ff0000;
+  font-style: italic;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.paymentOption {
+  border: solid 1px #d1d1d1;
+  margin: 7.5px 0px;
+  padding: 10px;
+}
+.paymentOption [class*=option-] {
+  float: left;
+}
+.paymentOption [class*=option-].option-checkbox {
+  width: 15%;
+  text-align: center;
+}
+.paymentOption [class*=option-].option-checkbox input[type="checkbox"] {
+  display: none;
+}
+.paymentOption [class*=option-].option-checkbox input[type="checkbox"]:checked + span {
+  border: solid 1px #17b936;
+}
+.paymentOption [class*=option-].option-checkbox input[type="checkbox"]:checked + span .fa {
+  color: #17b936;
+}
+.paymentOption [class*=option-].option-checkbox span {
+  border: solid 1px #d1d1d1;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  display: inline-block;
+  margin-top: 22px;
+  cursor: pointer;
+}
+.paymentOption [class*=option-].option-checkbox span .fa {
+  margin-top: -1px;
+  float: left;
+  color: #d1d1d1;
+}
+.paymentOption [class*=option-].option-logo {
+  width: 20%;
+}
+@media only screen and (max-width: 768px) {
+  .paymentOption [class*=option-].option-logo img {
+    width: 100%;
+  }
+}
+.paymentOption [class*=option-].option-content {
+  width: 65%;
+}
+.paymentOption [class*=option-].option-content h3 {
+  margin: 0px 0px 10px 0px;
+  font-size: 14px;
+  float: left;
+  width: 100%;
+}
+.paymentOption [class*=option-].option-content h3 span {
+  float: left;
+}
+.paymentOption [class*=option-].option-content h3 span.text-green {
+  color: #17b936;
+  margin-left: 10px;
+  font-size: 12px;
+}
+@media only screen and (max-width: 400px) {
+  .paymentOption [class*=option-].option-content h3 span.text-green {
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+}
+.paymentOption [class*=option-].option-content h3 span.text-red {
+  color: #f00;
+  margin-left: 10px;
+  font-size: 12px;
+}
+.paymentOption [class*=option-].option-content p {
+  color: #9e9e9e;
+  margin: 0px;
+}
+.paymentOption:hover, .paymentOption.active {
+  border: solid 1px #17b936;
+}
+
+.checkoutButton {
+  background-color: #17d964;
+  color: #fff;
+  display: block;
+  padding: 15px 10px;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0px 15px 0px;
+}
+.checkoutButton:hover, .checkoutButton:focus {
+  text-decoration: none;
+  color: #fff;
+}
+.checkoutButton + p {
+  font-size: 12px;
+  color: #9e9e9e;
+  margin-bottom: 30px;
+}
+
+.paymentDrop {
+  font-size: 12px;
+  text-align: right;
+}
+.paymentDrop .dropdown-toggle {
+  background-color: #fff;
+  border: solid 1px #999;
+  padding: 5px 5px 8px 5px;
+}
+.paymentDrop .dropdown-toggle img {
+  margin-right: 5px;
+}
+.paymentDrop .dropdown-menu {
+  right: 0;
+  left: inherit;
+  top: 23px;
+  border-radius: 0px;
+}
+
+.border-bottom {
+  border-bottom: solid 1px #d1d1d1;
+}
+
+.user-details-container, .user-img-container {
+  padding: 15px;
+}
+
+.user-information {
+  color: #676767;
+  padding: 0px !important;
+}
+.user-information h3 {
+  margin: 0px 0px 0px 0px;
+  color: #676767;
+}
+@media only screen and (max-width: 640px) {
+  .user-information h3 {
+    font-size: 18px;
+  }
+}
+.user-information p {
+  color: #676767;
+}
+
+.note-box {
+  padding: 15px !important;
+  background-color: #f0fff2;
+}
+.note-box p {
+  color: #48a348;
+  font-size: 12px;
+}
+
+.paymentVender {
+  margin: 15px 0px;
+}
+.paymentVender ul {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+}
+.paymentVender ul li {
+  display: inline-block;
+  margin: 5px;
+}
+
 .black {
   background: #000 !important;
 }
@@ -11526,8 +11947,75 @@ h4[cat-headding] {
   color: #4098f8;
 }
 
-.login_container .allmegacoursesBanner {
-  height: 100px;
+.loginContainer .loginBanner {
+  background-image: url(../images/freelession-banner.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 145px;
+}
+@media only screen and (min-width: 1024px) {
+  .loginContainer .loginWrapper .row {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.loginContainer [class*="login-"] {
+  padding: 0px;
+}
+.loginContainer [class*="login-"].login-Left-wrapper {
+  background-color: #fff;
+}
+.loginContainer [class*="login-"].login-Right-wrapper {
+  background: #f1e5ee;
+  background: -webkit-linear-gradient(-45deg, #f1e5ee 0%, #e6eef1 100%);
+  background: -webkit-linear-gradient(315deg, #f1e5ee 0%, #e6eef1 100%);
+  background: linear-gradient(135deg, #f1e5ee 0%, #e6eef1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e5ee', endColorstr='#e6eef1',GradientType=1 );
+}
+.loginContainer [class*="login-"] .login-Left-data {
+  float: right;
+  width: 100%;
+  padding: 15px;
+}
+@media only screen and (min-width: 1024px) {
+  .loginContainer [class*="login-"] .login-Left-data {
+    padding: 25px 15px;
+    width: 70%;
+  }
+}
+.loginContainer [class*="login-"] .login-Right-data {
+  float: left;
+  width: 100%;
+  padding: 15px;
+}
+@media only screen and (min-width: 1024px) {
+  .loginContainer [class*="login-"] .login-Right-data {
+    padding: 25px 15px;
+    width: 60%;
+  }
+}
+.loginContainer [class*="login-"] h2 {
+  margin: 0px 0px 15px 0px;
+  font-weight: bold;
+}
+
+.register-btn {
+  border-radius: 0px !important;
+  background-color: #524a7b !important;
+  color: #fff !important;
+  border: 0px !important;
+  border-radius: 2px !important;
+  padding: 10px 30px !important;
+  text-align: center !important;
+  width: 150px;
+}
+@media only screen and (max-width: 768px) {
+  .register-btn {
+    width: 100%;
+  }
 }
 
 .footer .get-notification {
